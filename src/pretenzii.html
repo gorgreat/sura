@@ -1,0 +1,75 @@
+<!--#set var="title" value="Претензии, возвраты" -->
+<!--#include virtual="/parts/header.html" -->
+    
+    
+<main class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-9 content">
+                <div class="u-content">
+                    <h1>Претензии, возвраты</h1>
+                    <p>Покупатель вправе предъявить претензии по качеству и количеству полученного товара не позднее 3-х
+                        дней, с момента получения продукции, возврат товара принимается не позднее 14 календарных дней с
+                        момента поставки товара.
+                    </p>
+                    <p>ООО «РАССВЕТ+» как официальный дилер несет все гарантийные и договорные обязательства перед
+                        своими покупателями, позволяя осуществлять за свой счет замену некачественной или некомплектной
+                        продукции.</p>
+
+                </div>
+                    
+                <div class="mb-5">
+                    <h2 class="h2 text-uppercase mt-5 mb-3">Оформление претензии / возврата</h2>
+                    <form action="/form/" method="post" class="form-reclamation js-form-submit">
+                        <input name="form" type="hidden" value="reclamation">
+                        <input type="text" name="name" class="d-none" value="">
+                        <input type="text" name="phone" class="d-none form__protect" value="">
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-4">
+                                <input type="text" class="form__input" name="client" placeholder="Клиент *" required>
+                            </div>
+                            <div class="col-12 col-md-6 mb-4">
+                                <input type="text" class="form__input" name="number" placeholder="Номер заказа *" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-4">
+                                <input type="text" class="form__input" name="t" placeholder="Телефон *" required>
+                            </div>
+                            <div class="col-12 col-md-6 mb-4">
+                                <input type="text" class="form__input" name="e" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 mb-4">
+                                <textarea class="form__textarea" name="m" placeholder="Причина возврата / претензии"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md mb-3">
+                                <div class="agreement">
+                                    Нажимая кнопку «Отправить» даю согласие на <a href="personal.html" target="_blank">обработку персональных данных</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-auto">
+                                <button type="submit" class="btn btn-primary form__submit">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="form__success">Ваша заявка успешно отправлена.<br>Наши менеджеры свяжутся с Вами.</div>
+                    <div class="form__error">Произошла ошибка</div>
+                </div>
+                
+            </div>
+            <aside class="col-12 col-md-3 aside">
+                <!--#include virtual="/parts/nav-aside.html" -->
+            </aside>
+        </div>
+    </div>
+</main>
+
+
+<!--#include virtual="/parts/footer.html" -->

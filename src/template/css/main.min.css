@@ -3020,7 +3020,9 @@ section {
   --green-dark: #3C632A;
   --gray-66: #666666;
   --gray-ea: #EAEAEA;
-  --gray-f5: #F5F5F5; }
+  --gray-f5: #F5F5F5;
+  --font-family: 'Oswald', Arial, sans-serif
+; }
 
 body {
   font-family: 'Oswald', Arial, sans-serif;
@@ -3029,6 +3031,9 @@ body {
   font-size: 20px;
   color: var(--font);
   background: #fff; }
+
+a, a:visited, a:hover {
+  color: var(--font); }
 
 .icon {
   display: inline-block;
@@ -3215,7 +3220,8 @@ body {
 .u-content h2,
 .h2 {
   font: normal 500 1.5em/1.1 'Oswald', Arial, Helvetica, sans-serif;
-  margin: 0 0 0.5em 0; }
+  margin: 0 0 0.5em 0;
+  text-align: center; }
 
 .u-content h3,
 .h3 {
@@ -3372,6 +3378,90 @@ body {
 
 .current > .nav-aside__link {
   font-weight: 500; }
+
+.popop__label {
+  margin-bottom: 5px;
+  display: block; }
+
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+  color: #666;
+  font-weight: 300; }
+
+.form__input,
+.form__select,
+.form__textarea {
+  width: 100%;
+  height: 50px;
+  padding: 0 1.25rem;
+  outline: none;
+  font-size: 1.125rem;
+  color: var(--font);
+  background: #FFFFFF;
+  border: 1px solid rgba(102, 102, 102, 0.5);
+  border-radius: 6px;
+  font-family: var(--font-family);
+  font-weight: 300;
+  display: block; }
+
+.form__textarea {
+  padding: 0.75rem 1.25rem;
+  line-height: 1.33em;
+  height: 7.5rem;
+  font-family: var(--font-family);
+  font-weight: 300;
+  display: block; }
+
+.btn {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5em;
+  text-align: center;
+  padding: 6.5px 22px;
+  color: var(--font);
+  background-color: --gray-ea;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+  font-weight: 300; }
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #F44336; }
+
+.btn-primary:hover {
+  background-color: #dd362a; }
+
+.agreement a {
+  color: var(--green); }
+
+.form__success,
+.form__error {
+  text-align: center;
+  padding: 1em;
+  font-size: 1.3em;
+  line-height: 1.5;
+  display: none; }
+
+.form__success {
+  color: var(--green); }
+
+.form__error {
+  color: #ee0000; }
+
+@media (min-width: 768px) {
+  .form-reclamation .agreement {
+    text-align: right; } }
 
 .footer-top {
   padding: 40px 0;
