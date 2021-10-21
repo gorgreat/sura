@@ -1,0 +1,26 @@
+.nav-aside {
+    background: var(--gray-f5);
+}
+
+.nav-aside__list {
+    padding-bottom: 100px;
+}
+
+.nav-aside__item {
+    border-bottom: 1px solid rgba(102, 102, 102, 0.5);
+    padding: 10px 20px;
+    color: var(--font);
+}
+
+.nav-aside__link {
+    font-size: 20px;
+    line-height: 1.5em;
+    color: var(--font);
+    text-decoration: none;
+}
+.nav-aside__link:hover {
+    color: var(--green);
+}
+.current>.nav-aside__link {
+    font-weight: 500;
+}

@@ -33,6 +33,19 @@ body {
     padding-bottom: 50px;
 }
 
+.content {
+
+}
+
+@media (min-width: 768px) {
+    .aside {
+        order: 1;
+    }
+    .content {
+        order: 2;
+    }
+}
+
 .rounded {
     border-radius: 4px;
 }
