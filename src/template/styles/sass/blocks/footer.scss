@@ -1,0 +1,164 @@
+.footer {}
+
+.footer-top {
+    padding: 40px 0;
+    background-color: var(--gray-ea);
+}
+
+.footer-top__title {
+    font-size: 24px;
+    line-height: 1.5em;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: var(--green-dark);
+}
+
+.footer-top__text {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--font);
+    margin-bottom: 20px;
+}
+
+.footer-social {
+    column-count: 2;
+
+}
+
+.footer-social__item {
+    margin-bottom: 20px;
+}
+
+.footer-social__link {
+    display: flex;
+    align-items: center;
+    color: var(--green-dark);
+    text-decoration: none;
+}
+
+.footer-top__select {
+    width: 100%;
+    border: 1px solid rgba(51, 51, 51, 0.5);
+    height: 50px;
+    background-color: transparent;
+    font-size: 20px;
+    color: var(--font);
+    padding: 0 20px;
+    font-family: 'Oswald', Arial, sans-serif;
+}
+
+
+.footer-middle {
+    padding: 15px 0 10px;
+    background-color: var(--green-dark);
+    color:#fff;
+}
+.footer-middle a {
+    color:#fff;
+}
+
+.footer-middle__col-1 {
+    padding: 0 12px 20px;
+    position: relative;
+    width: 100%;
+    flex: 0 0 20%;
+    max-width: 20%;
+
+}
+
+.footer-middle__logo {
+    display: block;
+    width: 100%;
+    max-width: 168px;
+    height: auto;
+}
+
+.footer-middle__col-2 {
+    padding: 15px 0;
+    position: relative;
+    width: 100%;
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+.footer-middle__title {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.footer-contact {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.footer-contact__item {}
+
+.footer-contact__link {
+    text-decoration: none;
+}
+
+.footer-middle__col-3 {
+    padding: 15px 0;
+    position: relative;
+    width: 100%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.nav-footer {}
+
+.nav-footer__list {
+    font-size: 20px;
+}
+
+.nav-footer__item {}
+
+.nav-footer__link {
+    text-decoration: none;
+    color:#fff;
+    line-height: 1.5em;
+}
+
+.footer-middle__col-4 {
+    position: relative;
+    width: 100%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.footer-bottom {
+    padding: 10px 0;
+    background: #fff;
+    color: var(--green-dark);
+    font-size: 20px;
+}
+
+.footer-bottom__text {
+    font-size: 20px;
+}
+.footer-bottom__text strong {
+    font-weight: 500;
+}
+
+.footer-bottom__link {
+    color: var(--green-dark);
+}
+
+.footer-bottom__col-1 {
+
+}
+
+
+.footer-bottom__col-2 {
+
+}
+
+@media (min-width: 768px) {
+    .footer-bottom__col-2 {
+        text-align: right;
+    }
+}

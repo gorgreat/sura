@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <!--#echo var="title" -->
+    </title>
+    <meta name="description" content="">
+    <link rel="icon" href="/template/img/favicon.png">
+    <meta property="og:image" content="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="/template/css/main.min.css" rel="preload" as="style">
+    <link href="/template/css/main.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+ <header class="header">
+     <div class="container">
+         <div class="row">
+             <div class="header__col-1">
+                 <a href="/" class="logo">
+                     <img src="/template/img/logo-sura-hor.png" width="346" height="111" alt="Sura Auto"
+                         class="logo__img">
+                 </a>
+             </div>
+             <div class="header__col-2">
+                 <nav class="nav-main">
+                     <ul class="nav-main__list">
+                        <li class="nav-main__item">
+                            <a class="nav-main__link" href="#">О компании</a>
+                        </li>
+                        <li class="nav-main__item parent">
+                            <a class="nav-main__link" href="#">Клиентам</a>
+                            <ul class="nav-main__list">
+                                <li class="nav-main__item">
+                                    <a class="nav-main__link" href="#">Клиентам 1</a>
+                                </li>
+                                <li class="nav-main__item">
+                                    <a class="nav-main__link" href="#">Клиентам 2</a>
+                                </li>
+                            </ul>
+                            <i class="nav-main__icon">
+                                <svg class="icon icn-ui-chevron-down">
+                                    <use xlink:href="/template/svg/icons.svg#icn-ui-chevron-down"></use>
+                                </svg>
+                            </i>
+                        </li>
+                        <li class="nav-main__item">
+                            <a class="nav-main__link" href="#">Поставщикам</a>
+                        </li>
+                        <li class="nav-main__item  parent">
+                            <a class="nav-main__link" href="#">Ассортимент</a>
+                            <ul class="nav-main__list">
+                                <li class="nav-main__item">
+                                    <a class="nav-main__link" href="#">Ассортимент 1</a>
+                                </li>
+                                <li class="nav-main__item">
+                                    <a class="nav-main__link" href="#">Ассортимент 2</a>
+                                </li>
+                            </ul>
+                            <i class="nav-main__icon">
+                                <svg class="icon icn-ui-chevron-down">
+                                    <use xlink:href="/template/svg/icons.svg#icn-ui-chevron-down"></use>
+                                </svg>
+                            </i>
+                        </li>
+                        <li class="nav-main__item">
+                            <a class="nav-main__link" href="#">Акции</a>
+                        </li>
+                        <li class="nav-main__item">
+                            <a class="nav-main__link" href="#">Контакты</a>
+                        </li>
+                     </ul>
+                 </nav>
+                <button class="header-search" type="button">
+                    <svg class="icon-loupe">
+                        <use xlink:href="/template/svg/icons.svg#icon-loupe"></use>
+                    </svg>
+                </button>
+             </div>
+         </div>
+     </div>
+ </header>
+
+<nav class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <meta itemprop="position" content="1">
+                <a href="/" title="Главная" itemprop="item">
+                    <span itemprop="name">Главная</span>
+                </a>
+            </li>
+            <li class="active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <meta itemprop="position" content="2">
+                <span typeof="WebPage" resource="/page">
+                    <span itemprop="name">
+                        <!--#echo var="title" -->
+                    </span>
+                </span>
+            </li>
+        </ul>
+    </div>
+</nav>
