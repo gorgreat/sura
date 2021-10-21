@@ -3040,6 +3040,9 @@ body {
 .main {
   padding-bottom: 50px; }
 
+.rounded {
+  border-radius: 4px; }
+
 .header {
   margin: 20px 0;
   background: rgba(255, 255, 255, 0.8); }
@@ -3150,8 +3153,6 @@ body {
   text-align: justify; }
 
 .u-content * {
-  padding: 0;
-  margin: 0;
   vertical-align: baseline; }
 
 .u-content a {
