@@ -1,0 +1,75 @@
+<!--#set var="title" value="Контакты" -->
+<!--#include virtual="/parts/header.html" -->
+    
+    
+<main class="main">
+    <div class="container">
+
+        <h1 class="h1">Контакты</h1>
+        
+        <div class="row">
+            <div class="col-12 col-md-6 mb-5 order-2 order-md-1">
+                <div id="map"></div>
+
+                <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+                <script>
+                    coord = '51.99491210, 47.789510';
+                    coord = coord.trim();
+                    coord = coord.split(',');
+                    coord[0] = coord[0].trim();
+                    coord[1] = coord[1].trim();
+                    if (coord[0] && coord[1]) {
+                        ymaps.ready(function () {
+                            var myMap = new ymaps.Map('map', {
+                                center: coord,
+                                zoom: 15
+                            });
+
+                            myPlacemark = new ymaps.Placemark(coord, {
+                                hintContent: 'ул. Промышленная, 4',
+                                balloonContent: 'ул. Промышленная, 4'
+                            },
+                            {
+                            iconLayout: 'default#image',
+                            iconImageHref: 'images/myIcon.gif',
+                            iconImageHref: '/template/img/map-point.svg',
+                            // Размеры метки.
+                            iconImageSize: [40, 53],
+                            // Смещение левого верхнего угла иконки относительно
+                            // её "ножки" (точки привязки).
+                            iconImageOffset: [-2, -28]
+                            });
+                            myMap.geoObjects.add(myPlacemark);
+
+                            
+                            //myMap.controls.add(new ymaps.control.ZoomControl());
+                            //myMap.controls.add('typeSelector');
+                            myMap.behaviors.enable('scrollZoom');
+                        });
+                    }
+                </script>
+
+            </div>
+            <div class="col-12 col-md-6 mb-5 order-1 order-md-2">
+                <div class="u-content">
+                    <p>413840, Россия, г. Балаково,
+                    ул. Промышленная, дом 2/2, офис 2</p>
+
+                    <p>Для писем: абонентский ящик № 274, г. Балаково</p>
+
+                    <p><a href="tel:88007754509">8 (800) 775-45-09</a> - Бесплатная линия</p>
+                    <p><a href="tel:+78453220477">+7 (8453) 22-04-77</a></p>
+
+                    <p><a href="tel:+78453220355">+7 (8453) 22-03-55</a></p>
+                    <p><a href="tel:+79272258680">+7 927 225-86-80</p>
+
+                    <p><a href="mailto:sura-avto01@mail.ru">sura-avto01@mail.ru</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+
+<!--#include virtual="/parts/footer.html" -->
