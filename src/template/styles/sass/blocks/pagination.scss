@@ -1,0 +1,36 @@
+/* pagination */
+.pagination {
+    text-align: center;
+    margin: 20px 0
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 10px 10px;
+    background: #FFFFFF;
+    border: 1px solid rgba(102, 102, 102, 0.1);
+    border-radius: 4px;
+}
+
+.pagination li a,
+.pagination li span {
+    font-size: 18px;
+    color: var(--font);
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    min-width: 38px;
+}
+
+.pagination li.active {
+    background: rgba(102, 102, 102, 0.5);
+}
+
+.pagination li.active * {
+    color:#fff;
+}
+
+.pagination li:hover:not(.active) * {
+    background-color: var(--gray-ea);
+}
+/* /pagination */
