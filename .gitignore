@@ -7,7 +7,7 @@
 /**/package-lock.json
 /**/debug.log
 /src/**/*.map
-/dist/
+
 /src/template/*.map
 todo.txt
 
