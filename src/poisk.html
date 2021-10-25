@@ -1,0 +1,71 @@
+<!--#set var="title" value="Поиск" -->
+<!--#include virtual="/parts/header.html" -->
+       
+<main class="main">
+    <div class="container">
+        
+        <h1 class="h1">Поиск</h1>
+        
+        <!-- content -->
+        <div class="u-content">
+        </div>
+        <!-- /content -->
+
+        <!-- Module position -->
+
+        <!-- sort bar -->
+        <div class="sort-bar row align-items-center">
+            <div class="col-12 col-sm-auto mb-3">
+                <div class="sort-bar__label">Сортировка</div>
+            </div>
+            
+            <div class="col col-sm-auto mb-3">
+                <button class="sort-bar__btn btn btn-outline btn-bordered">По рейтингу</button>
+            </div>
+            <div class="col col-sm-auto mb-3">
+                <button class="sort-bar__btn btn btn-outline btn-bordered active">Цена по возрастанию</button>
+            </div>
+            <div class="col col-sm-auto mb-3">
+                <button class="sort-bar__btn btn btn-outline btn-bordered">Цена по убыванию</button>
+            </div>
+            <div class="col col-sm-auto mb-3">
+                <button class="sort-bar__btn btn btn-outline btn-bordered">По алфавиту от А до Я</button>
+            </div>
+            <div class="col col-sm-auto mb-3">
+                <button class="sort-bar__btn btn btn-outline btn-bordered">По алфавиту от Я до А</button>
+            </div>
+        </div>
+        <!-- /sort bar -->
+
+        <!-- search list -->
+        <div class="product-list row">
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <!--#include virtual="/parts/product-card.html" -->
+            </div>
+            <div class="col-12  col-sm-6 col-md-3 mb-4">
+                <!--#include virtual="/parts/product-card-2.html" -->
+            </div>
+            <div class="col-12  col-sm-6 col-md-3 mb-4">
+                <!--#include virtual="/parts/product-card.html" -->
+            </div>
+
+            <div class="col-12  col-sm-6 col-md-3 mb-4">
+                <!--#include virtual="/parts/product-card-2.html" -->
+            </div>
+            <div class="col-12  col-sm-6 col-md-3 mb-4">
+                <!--#include virtual="/parts/product-card.html" -->
+            </div>
+            <div class="col-12  col-sm-6 col-md-3 mb-4">
+                <!--#include virtual="/parts/product-card-2.html" -->
+            </div>
+        </div>
+        <!-- /search list -->
+
+        <!--#include virtual="/parts/pagination.html" -->            
+
+        <!-- /Module position -->
+       
+    </div>
+</main>
+
+<!--#include virtual="/parts/footer.html" -->

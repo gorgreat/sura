@@ -1,0 +1,19 @@
+.sort-bar {
+    margin-bottom: 20px;
+}
+
+.sort-bar__label {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.sort-bar__btn {
+    white-space: nowrap;
+}
+
+.sort-bar__btn.active {
+    background-color: var(--base);
+    color: #fff;
+    border-color: var(--base);
+}

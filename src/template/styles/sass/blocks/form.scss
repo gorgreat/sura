@@ -44,7 +44,7 @@
     font-size: 18px;
     line-height: 1.5em;
     text-align: center;
-    padding: 6.5px 22px;
+    padding: 5.5px 21px;
     color: var(--font);
     background-color: (--gray-ea);
     display: inline-block;
@@ -64,10 +64,29 @@ button:not(:disabled) {
 .btn-primary {
     color: #fff;
     background-color: #F44336;
+    border: 1px solid #F44336;
 }
 .btn-primary:hover {
     background-color: #dd362a;
+    border-color: #dd362a;
 }
+
+.btn-outline {
+    line-height: 1.5em;
+    color: var(--font);
+    background: #fff;
+    border: 1px solid #b3b3b3;
+}
+
+.btn-outline:hover {
+    background-color: var(--base);
+    color: #fff;
+    border: 1px solid var(--base);
+}
+.btn-bordered {
+    border-radius: 50px;
+}
+
 
 .agreement {
 
