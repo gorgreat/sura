@@ -1,0 +1,218 @@
+<!--#set var="title" value="Каталог" -->
+<!--#include virtual="/parts/header.html" -->
+    
+    
+<main class="main">
+    <div class="container">
+        <h1 class="h1">Каталог</h1>
+
+        <div class="row">
+            <div class="col-12 col-md-9 content mb-5">
+                <!-- content -->
+                <div class="u-content">
+                </div>
+                <!-- /content -->
+
+                <!-- Module position -->
+
+                <!-- tabs -->
+                <div class="tabs">
+                    <div class="tabs__list">
+                        <div class="tabs__item active">РТИ</div>
+                        <div class="tabs__item">Запчасти</div>
+                    </div>
+
+                    <div class="tabs__contents">
+                        <div class="tabs__content active">
+                            
+                            <!-- catalog list -->
+                            <!--#include virtual="/parts/product-list.html" -->
+                            <!-- /catalog list -->
+
+                            <!--#include virtual="/parts/pagination.html" -->
+
+                        </div>
+                        <div class="tabs__content">
+                        
+                        </div>
+                    </div>
+                </div>
+                <!-- /tabs -->
+
+                <!-- /Module position -->
+            </div>
+            <aside class="col-12 col-md-3 aside">
+                
+
+                <form class="filter-as" action="#" method="get">
+                    <!-- sort -->
+                    <div class="filter-as__section">
+                        <div class="filter-as__subheader">Сортировка</div>
+                        <ul class="filter-as__list">
+                            <li class="filter-as__item">
+                                <label class="custom-control">
+                                    <input type="radio" value="rating-asc" name="sort" class="custom-control__checkbox middle">
+                                    <span class="custom-control__icon"></span><span
+                                        class="custom-control__label">По рейтингу</span>
+                                </label>
+                            </li>
+                            <li class="filter-as__item">
+                                <label class="custom-control">
+                                    <input type="radio" value="price-asc" name="sort"
+                                        class="custom-control__checkbox middle">
+                                    <span class="custom-control__icon"></span><span
+                                        class="custom-control__label">По возрастанию цены</span>
+                                </label>
+                            </li>
+                            <li class="filter-as__item">
+                                <label class="custom-control">
+                                    <input type="radio" value="price-desc" name="sort"
+                                        class="custom-control__checkbox middle">
+                                    <span class="custom-control__icon"></span><span class="custom-control__label">По
+                                        убыванию цены</span>
+                                </label>
+                            </li>
+                            <li class="filter-as__item">
+                                <label class="custom-control">
+                                    <input type="radio" value="name-asc" name="sort"
+                                        class="custom-control__checkbox middle">
+                                    <span class="custom-control__icon"></span><span class="custom-control__label">По
+                                        алфавиту</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- brand -->
+                    <div class="filter-as__section">
+                        <div class="filter-as__subheader">Бренд</div>
+                        <ul class="filter-as__list">
+                            <li class="filter-as__item">
+                                <label class="custom-control">
+                                    <input type="checkbox" value="14120" name="brand[]"
+                                        class="custom-control__checkbox middle">
+                                    <span class="custom-control__icon"></span><span
+                                        class="custom-control__label">
+                                        HOFER
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="filter-as__item">
+                                <label class="custom-control">
+                                    <input type="checkbox" value="4069" name="brand[]"
+                                        class="custom-control__checkbox middle">
+                                    <span class="custom-control__icon"></span><span
+                                        class="custom-control__label">HOFER</span>
+                                </label>
+                            </li>
+                           
+                        </ul>
+                    </div>
+
+
+                    <!-- marka -->
+                    <div class="filter-as__section">
+                        <div class="filter-as__subheader">Марка</div>
+                        <ul class="filter-as__list">
+                            <li class="filter-as__item">
+                                <label class="custom-control">
+                                    <input type="checkbox" value="14120" name="marka[]"
+                                        class="custom-control__checkbox middle">
+                                    <span class="custom-control__icon"></span><span class="custom-control__label">
+                                        ВАЗ
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="filter-as__item">
+                                <label class="custom-control">
+                                    <input type="checkbox" value="4069" name="marka[]"
+                                        class="custom-control__checkbox middle">
+                                    <span class="custom-control__icon"></span><span
+                                        class="custom-control__label">ГАЗ</span>
+                                </label>
+                            </li>
+                            <li class="filter-as__item">
+                                <label class="custom-control">
+                                    <input type="checkbox" value="14120" name="marka[]"
+                                        class="custom-control__checkbox middle">
+                                    <span class="custom-control__icon"></span><span class="custom-control__label">
+                                        УАЗ
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="filter-as__item">
+                                <label class="custom-control">
+                                    <input type="checkbox" value="4069" name="marka[]"
+                                        class="custom-control__checkbox middle">
+                                    <span class="custom-control__icon"></span><span
+                                        class="custom-control__label">КАМАЗ</span>
+                                </label>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!--  -->
+                    <div class="filter-as__section">
+                        <div class="filter-as__subheader">Применяемость</div>
+                        <ul class="filter-as__list">
+                            <li class="filter-as__item">
+                                <label class="custom-control">
+                                    <input type="checkbox" value="14120" name="[]"
+                                        class="custom-control__checkbox middle">
+                                    <span class="custom-control__icon"></span><span class="custom-control__label">
+                                        1
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="filter-as__item">
+                                <label class="custom-control">
+                                    <input type="checkbox" value="4069" name="[]"
+                                        class="custom-control__checkbox middle">
+                                    <span class="custom-control__icon"></span><span
+                                        class="custom-control__label">2</span>
+                                </label>
+                            </li>
+                            
+
+                        </ul>
+                    </div>
+
+                    <!--  -->
+                    <div class="filter-as__section">
+                        <div class="filter-as__subheader">Материал</div>
+                        <ul class="filter-as__list">
+                            <li class="filter-as__item">
+                                <label class="custom-control">
+                                    <input type="checkbox" value="14120" name="[]"
+                                        class="custom-control__checkbox middle">
+                                    <span class="custom-control__icon"></span><span class="custom-control__label">
+                                        1
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="filter-as__item">
+                                <label class="custom-control">
+                                    <input type="checkbox" value="4069" name="[]"
+                                        class="custom-control__checkbox middle">
+                                    <span class="custom-control__icon"></span><span
+                                        class="custom-control__label">2</span>
+                                </label>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+
+
+                </form>
+
+            </aside>
+        </div>
+    </div>
+</main>
+
+
+<!--#include virtual="/parts/footer.html" -->
