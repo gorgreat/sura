@@ -51,9 +51,18 @@ a, a:visited, a:hover {
         order: 2;
     }
 }
+@media (min-width: 992px) {
+    .col-lg-20p {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
 
 .rounded {
     border-radius: 4px;
+}
+.color-green {
+    color: var(--base);
 }
 
 

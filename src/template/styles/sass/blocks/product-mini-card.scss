@@ -1,0 +1,51 @@
+.product-mini__list {
+    margin-bottom: 60px;
+    margin-top: 45px;
+}
+
+.product-mini-card {}
+
+.product-mini-card__figure {
+    display: block;
+    text-decoration: none;
+    height: 210px;
+    margin-bottom: 35px;
+    position: relative;
+    border: 1px solid #666666;
+    border-radius: 20px;
+}
+.product-mini-card__figure:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    width: 85%;
+    margin: 0 8%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--base);
+}
+
+.product-mini-card__img {
+    width: 100%;
+    height: 208px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 19px;
+}
+
+.product-mini-card__title {
+    font-weight: 300;
+    line-height: 1.5em;
+    text-align: center;
+    color: #666666;
+}
+
+.product-mini-card__title-link {
+    color: #666666;
+    text-decoration: none;
+}
+.product-mini-card__title-link:hover {
+    color: var(--base)
+}
