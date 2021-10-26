@@ -1,5 +1,48 @@
 .header {
-    margin: 20px 0;
+    margin: 0 0 20px 0;
+}
+
+.header-service-bar {
+    padding: 2px 0;
+}
+
+.header-service-pane {
+
+}
+
+.auth {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.2em;
+    text-align: right;
+}
+.auth > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.sura-icon-user {
+    font-size: 16px;
+}
+
+.auth__button {
+    cursor: pointer;
+}
+
+.auth__login {
+    font-weight: 400;
+}
+
+.auth__register {
+    font-weight: 300;
+}
+
+.auth__link {
+    text-decoration: none;
+    color: var(--font);
+}
+
+
+.header-main {
     background: rgba(255, 255, 255, 0.8);
 }
 
@@ -48,13 +91,15 @@
 }
 
 .nav-main__item {
-    text-align: center;
     position: relative;
     color: var(--font);
+}
+.nav-main>.nav-main__list>.nav-main__item {
+    text-align: center;
     flex: 1 1 auto;
 }
 
-.nav-main__list > .nav-main__item:not(:first-child) {
+.nav-main>.nav-main__list>.nav-main__item:not(:first-child) {
     border-left: 1px solid rgba(51, 51, 51, 0.5);
 }
 
@@ -68,22 +113,54 @@
     font-weight: 400;
 }
 
+.nav-main__item:hover > .nav-main__link,
+.nav-main__item:hover > .nav-main__icon,
+.nav-main__item.current > .nav-main__link,
+.nav-main__item.current>.nav-main__icon {
+    color: var(--base);
+}
 
-.parent {
-    paddng-right: 20px
+.nav-main__item.parent {
+    padding-right: 24px
 }
 
 .nav-main__icon {
-    display: none;
+    font-size: 10px;
+    position: absolute;
+    right: 10px;
+    top: 11px;
 }
 
 /* 2 level */
 .nav-main__item>.nav-main__list {
     display: none;
+    min-width: 200px;
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0 10px 5px 5px rgba(0,0,0,0.1);
+    position: absolute;
+    left:0;
+    z-index: 10000;
+    top: 100%;
+    padding: 1em 1em 0 1em;
+    text-align: left;
+}
+.nav-main__item:hover>.nav-main__list,
+.nav-main__item>.nav-main__list:hover {
+    display: block;
 }
 
+.nav-main__item>.nav-main__list {
+    
 
+}
 
+.nav-main__list>.nav-main__item .nav-main__item {
+    margin-bottom: 10px;
+}
+.nav-main__item>.nav-main__list .nav-main__link {
+    text-transform: none;
+}
 
 
 .header-search {
@@ -94,15 +171,19 @@
     border-radius: 6px;
     cursor: pointer;
     color: #fff;
-}
-.icon-loupe {
-    display: inline-block;
-    width: 19px;
-    height: 19px;
-    max-width: 19px;
+    font-size: 19px;
+    display: flex;
+    place-items: center;
+    border: none;
+    padding: 0;
 }
 
-.icon-loupe {}
+.header-search .sura-icon {
+    display: block;
+    margin: 0 auto;
+}
+
+
 
 
 
