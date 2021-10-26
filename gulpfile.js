@@ -139,12 +139,12 @@ function images() {
 }
 
 function imagesContent() {
-	return src('src/img/*.{gif,png,jpg,svg,webp}')
-		.pipe(newer('dist/img'))
+	return src('src/assets/images/**/*.{gif,png,jpg,svg,webp}')
+		.pipe(newer('dist/assets/images'))
 		.pipe(imagemin([
 			imagemin.gifsicle({ interlaced: true }),
 			imagemin.mozjpeg({
-				quality: 75,
+				quality: 80,
 				progressive: true
 			}),
 			imagemin.optipng({ optimizationLevel: 5 }),
@@ -155,7 +155,7 @@ function imagesContent() {
 				]
 			})
 		]))
-		.pipe(dest('dist/img'))
+		.pipe(dest('dist/assets/images'))
 		.pipe(browserSync.stream())
 }
 

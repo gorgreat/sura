@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Акции
+    </title>
+    <meta name="description" content="">
+    <meta property="og:image" content="/template/img/logo-sura-hor.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/template/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/template/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/template/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/template/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/template/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="/template/css/main.min.css" rel="preload" as="style">
+    <link href="/template/css/main.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+ <header class="header">
+     <div class="header-service-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="header-service-pane">
+                    <!-- тут ожидаю корзину и избранное -->
+                </div>
+                <div class="auth">
+                    <svg class="sura-icon sura-icon-user"><use xlink:href="#sura-icon-user"></use></svg>
+                    <span class="auth__button auth__login js-auth__login">Войти</span>
+                    <span> | </span>
+                    <span class="auth__button auth__register js-auth__register">Зарегистрироваться</span>
+                   <!-- после входа
+                   <a href="/lk" class="auth__link">ООО "Вектор"</a>
+                   -->
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="header-main">
+        <div class="container">
+            <div class="row">
+                <div class="header__col-1">
+                    <a href="/" class="logo">
+                        <img src="/template/img/logo-sura-hor.png" width="346" height="111" alt="Sura Auto"
+                            class="logo__img">
+                    </a>
+                </div>
+                <div class="header__col-2">
+                    <nav class="nav-main">
+                        <ul class="nav-main__list">
+                            <li class="nav-main__item">
+                                <a class="nav-main__link" href="#">О компании</a>
+                            </li>
+                            <li class="nav-main__item parent current">
+                                <a class="nav-main__link" href="#">Клиентам</a>
+                                <ul class="nav-main__list">
+                                    <li class="nav-main__item">
+                                        <a class="nav-main__link" href="#">Клиентам 1</a>
+                                    </li>
+                                    <li class="nav-main__item">
+                                        <a class="nav-main__link" href="#">Клиентам 2</a>
+                                    </li>
+                                </ul>
+                                <i class="nav-main__icon">
+                                    <svg class="sura-icon sura-icon-arrow-down" width="10" height="10">
+                                        <use xlink:href="#sura-icon-arrow-down"></use>
+                                    </svg>
+                                </i>
+                            </li>
+                            <li class="nav-main__item">
+                                <a class="nav-main__link" href="#">Поставщикам</a>
+                            </li>
+                            <li class="nav-main__item  parent">
+                                <a class="nav-main__link" href="#">Ассортимент</a>
+                                <ul class="nav-main__list">
+                                    <li class="nav-main__item">
+                                        <a class="nav-main__link" href="#">Ассортимент 1</a>
+                                    </li>
+                                    <li class="nav-main__item">
+                                        <a class="nav-main__link" href="#">Ассортимент 2</a>
+                                    </li>
+                                </ul>
+                                <i class="nav-main__icon">
+                                    <svg class="sura-icon sura-icon-arrow-down" width="10" height="10">
+                                        <use xlink:href="#sura-icon-arrow-down"></use>
+                                    </svg>
+                                </i>
+                            </li>
+                            <li class="nav-main__item">
+                                <a class="nav-main__link" href="#">Акции</a>
+                            </li>
+                            <li class="nav-main__item">
+                                <a class="nav-main__link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header-search" type="button">
+                        <svg class="sura-icon sura-icon-loupe">
+                            <use xlink:href="#sura-icon-loupe"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+     </div>
+ </header>
+
+<nav class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <meta itemprop="position" content="1">
+                <a href="/" title="Главная" itemprop="item">
+                    <span itemprop="name">Главная</span>
+                </a>
+            </li>
+            <li class="active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <meta itemprop="position" content="2">
+                <span typeof="WebPage" resource="/page">
+                    <span itemprop="name">
+                        Акции
+                    </span>
+                </span>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    
+    
+<main class="main">
+    <div class="container">
+        <div class="u-content">
+            <h1>Акции</h1>
+        </div>
+    </div>
+
+
+    <!-- Новости -->
+     <div class="article">
+     <ul class="article__list">
+
+         <!-- news item -->
+         <li class="article__item mb-5 mb-md-0"">
+            <div class=" container">
+                <div class="row">
+                    <div class="col-12 col-md-3 mb-3 mb-md-0">
+                        <a href="/novost-1.html" class="article__figure">
+                            <img src="/assets/images/novosti/novost-1.jpg" alt="Новость 1" class="article__img"
+                                loading="lazy">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <h3 class="article__title">
+                            <a class="article__link" href="/novost-1.html">Кемпер на базе нового Ларгуса - он уже
+                                существует</a>
+                        </h3>
+                        <div class="article__introtext">
+                            Российский сегмент кемперов переживает настоящий бум. За последний год российские
+                            автопроизводители представили большое количество таких моделей, последними из которых
+                            стали Lada Niva Autodom и «УАЗ Байкал». Число таких машин в ближайшее время продолжит
+                            расти, причем не исключено, что в основе одной из них будет лежать следующая генерация
+                            «Лада Ларгус».
+                        </div>
+                        <div class="article__more">
+                            <a href="/novost-1.html" class="article__more-link">Подробнее</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </li>
+        <!-- /news item -->
+
+
+        <!-- news item -->
+        <li class="article__item mb-5 mb-md-0"">
+            <div class=" container">
+                <div class="row">
+                    <div class="col-12 col-md-3 mb-3 mb-md-0">
+                        <a href="/novost-1.html" class="article__figure">
+                            <img src="/assets/images/novosti/novost-2.jpg" alt="Новость 2" class="article__img" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <h3 class="article__title">
+                            <a class="article__link" href="/novost-1.html">Цена ОСАГО вырастет на 10% до конца
+                                года</a>
+                        </h3>
+                        <div class="article__introtext">
+                            По разным прогнозам, стоимость полисов обязательного страхования ответственности
+                            водителей в ближайшее время увеличится на 5–10%. Выплаты по страховым случаям растут
+                            вместе с увеличением стоимости запчастей и ремонтных работ. Также, как выяснили
+                            «Известия», обратившись за комментариями в страховые компании, увеличилось и количество
+                            обращений в страховые компании за выплатами.
+                        </div>
+                        <div class="article__more">
+                            <a href="/novost-1.html" class="article__more-link">Подробнее</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </li>
+        <!-- /news item -->
+
+
+        <!-- news item -->
+        <li class="article__item mb-5 mb-md-0"">
+            <div class=" container">
+                <div class="row">
+                    <h3 class="col-12 col-md-3 mb-3 mb-md-0">
+                        <a href="/novost-1.html" class="article__figure">
+                            <img src="/assets/images/novosti/novost-3.jpg" alt="Новость 3" class="article__img" loading="lazy">
+                        </a>
+                    </h3>
+                    <div class="col-12 col-md-9">
+                        <h3 class="article__title">
+                            <a class="article__link" href="/novost-1.html">УАЗ показал космический кемпер МИР на
+                                базе «буханки»</a>
+                        </h3>
+                        <div class="article__introtext">
+                            Ульяновский автозавод в своем официальном аккаунте в соцсети Вконтакте представил
+                            фотографии автодома на базе «буханки», а точнее — на базе «головастика», грузовичка из
+                            семейства СГР.
+                        </div>
+                        <div class="article__more">
+                            <a href="/novost-1.html" class="article__more-link">Подробнее</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </li>
+        <!-- /news item -->
+    </ul>
+
+ </div>
+    <!-- /Новости -->
+    
+     <!-- Pagination -->
+ <div class="pagination">
+     <div class="container">
+         <ul>
+             <li class="pagination__item active"><span>1</span></li>
+             <li class="pagination__item"><a href="#">2</a></li>
+             <li class="pagination__item"><a href="#">3</a></li>
+             <li class="pagination__item"><a href="#">4</a></li>
+             <li class="pagination__item"><a href="#">5</a></li>
+             <li class="pagination__item pagination__next"><a href="#">Дальше</a></li>
+         </ul>
+     </div>
+ </div>
+ <!-- / Pagination -->
+ 
+
+</main>
+
+
+<footer class="footer">
+    <!-- footer top -->
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="footer-top__title">Присоединяйтесь к нам</div>
+                    <div class="footer-top__text">Будьте в курсе всех новостей и мероприятий от Сура-Авто, смотрите видео и
+                        фото. Не сомневайтесь —
+                        присоединяйтесь к нам!</div>
+
+                    <ul class="footer-social">
+                        <li class="footer-social__item">
+                            <a rel="nofollow" target="_blank" href="https://vk.com/feed" class="footer-social__link">
+                                <svg class="icon">
+                                    <use xlink:href="/assets/vendor/main/images/icons.svg#icon-vk"></use>
+                                </svg>
+                                Vkontakte
+                            </a>
+                        </li>
+                        <li class="footer-social__item">
+                            <a rel="nofollow" target="_blank" href=" https://www.instagram.com/" class="footer-social__link">
+                                <svg class="icon">
+                                    <use xlink:href="/assets/vendor/main/images/icons.svg#icon-instagram"></use>
+                                </svg>
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="footer-top__title">Мы в instagram</div>
+
+                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                    <div class="elfsight-app-c551104f-3ea6-406e-ba3e-4c89ada92b41"></div>
+
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="footer-top__title">Найдите нужную продукцию</div>
+                    <div class="footer-top__text">Ищите необходимую информацию по разделам с помощью выпадающих вкладок:
+                    </div>
+                    <select class="footer-top__select"
+                        onchange="window.location.href = this.options[this.selectedIndex].value">
+                        <option value="#amo">Амортизаторы</option>
+                        <option value="#rti">РТИ</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /footer top -->
+
+    <!-- footer middle -->
+    <div class="footer-middle">
+        <div class="container">
+            <div class="row">
+                <div class="footer-middle__col-1">
+                    <img src="/template/img/logo-sura-ver.png" width="238" height="168" alt="Sura Auto" class="footer-middle__logo"
+                        loading="lazy">
+                </div>
+
+                <div class="footer-middle__col-2">
+                    <div class="footer-middle__title">Наш офис</div>
+
+                    <ul class="footer-contact">
+                        <li class="footer-contact__item">13840, Россия, г. Балаково, <br>ул. Промышленная, дом 2/2, офис 2
+                        </li>
+                        <li class="footer-contact__item">
+                            <a class="footer-contact__link" href="tel:+78453220477">+7 (8453) 22-04-77</a>
+                        </li>
+                        <li class="footer-contact__item">
+                            <a class="footer-contact__link" href="tel:+78453220355">+7 (8453) 22-03-55</a>
+                        </li>
+                        <li class="footer-contact__item">
+                            <a class="footer-contact__link" href="tel:+79272258680">+7 927 225-86-80</a>
+                        </li>
+                        <li class="footer-contact__item">
+                            <a class="footer-contact__link" href="mailto:sura-avto01@mail.ru">sura-avto01@mail.ru</a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+                <div class="footer-middle__col-3">
+                    <div class="footer-middle__title">Компания Sura</div>
+                    <nav class="nav-footer">
+                        <ul class="nav-footer__list">
+                            <li class="nav-footer__item"><a href="" class="nav-footer__link">О компании</a></li>
+                            <li class="nav-footer__item"><a href="" class="nav-footer__link">Клиентам</a></li>
+                            <li class="nav-footer__item"><a href="" class="nav-footer__link">Поставщикам</a></li>
+                            <li class="nav-footer__item"><a href="" class="nav-footer__link">Ассортимент</a></li>
+                            <li class="nav-footer__item"><a href="" class="nav-footer__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-middle__col-4">
+                    <div class="footer-middle__title">Каталог товаров</div>
+                    <nav class="nav-footer">
+                        <ul class="nav-footer__list">
+                            <li class="nav-footer__item"><a href="" class="nav-footer__link">Амортизаторы</a></li>
+                            <li class="nav-footer__item"><a href="" class="nav-footer__link">Бензонасосы</a></li>
+                            <li class="nav-footer__item"><a href="" class="nav-footer__link">Генераторы</a></li>
+                            <li class="nav-footer__item"><a href="" class="nav-footer__link">Тормозные диски</a></li>
+                            <li class="nav-footer__item"><a href="" class="nav-footer__link">Бензонасосы </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>     
+        </div>
+    </div>
+    <!-- /footer middle -->
+
+    <!-- footer bottom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 footer-bottom__col-1">
+                    <div class="footer-bottom__text">
+                        Разработка сайта — <a class="footer-bottom__link" href="" target="_blank" rel="nofollow">Семь Ветров</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 footer-bottom__col-2">
+                    <div class="footer-bottom__text">© <strong>Компания Сура-Авто</strong>. Все права защищены. 2021</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /footer bottom -->
+</footer>
+
+<!-- include icon pack -->
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="sura-icon-user" viewBox="0 0 32 32">
+<path d="M16.002 0c-4.571 0-8.308 3.737-8.308 8.308s3.737 8.308 8.308 8.308c4.572 0 8.308-3.737 8.308-8.308s-3.737-8.308-8.308-8.308zM30.261 23.256c-0.218-0.544-0.508-1.052-0.835-1.524-1.669-2.467-4.245-4.1-7.147-4.499-0.363-0.036-0.762 0.036-1.052 0.254-1.524 1.125-3.338 1.705-5.225 1.705s-3.701-0.58-5.225-1.705c-0.29-0.218-0.689-0.327-1.052-0.254-2.902 0.399-5.515 2.032-7.147 4.499-0.327 0.472-0.617 1.016-0.834 1.524-0.109 0.218-0.073 0.472 0.036 0.689 0.29 0.508 0.653 1.016 0.98 1.451 0.508 0.689 1.052 1.306 1.669 1.887 0.508 0.508 1.088 0.98 1.669 1.451 2.866 2.141 6.313 3.265 9.868 3.265s7.002-1.125 9.868-3.265c0.581-0.435 1.161-0.943 1.669-1.451 0.581-0.58 1.161-1.197 1.669-1.887 0.363-0.472 0.689-0.943 0.98-1.451 0.181-0.218 0.218-0.472 0.109-0.689z"></path>
+</symbol>
+<symbol id="sura-icon-chevron-down" viewBox="0 0 32 32">
+<path d="M30.803 7.86l-14.811 14.813-14.811-14.813c-0.276-0.267-0.717-0.259-0.984 0.017-0.26 0.27-0.26 0.697 0 0.966l15.304 15.304c0.272 0.272 0.712 0.272 0.984 0l15.304-15.304c0.276-0.267 0.284-0.707 0.017-0.984s-0.707-0.284-0.984-0.017c-0.006 0.006-0.011 0.011-0.017 0.017l-0.001 0z"></path>
+</symbol>
+<symbol id="sura-icon-error" viewBox="0 0 32 32">
+<path d="M16 0c-8.822 0-16 7.178-16 16s7.178 16 16 16c8.822 0 16-7.178 16-16s-7.178-16-16-16zM22.471 20.586c0.26 0.26 0.26 0.682 0 0.943l-0.942 0.943c-0.26 0.26-0.683 0.26-0.943 0l-4.586-4.586-4.586 4.586c-0.26 0.26-0.682 0.26-0.943 0l-0.943-0.943c-0.26-0.26-0.26-0.682 0-0.943l4.586-4.586-4.586-4.586c-0.26-0.26-0.26-0.682 0-0.943l0.943-0.943c0.26-0.26 0.682-0.26 0.943 0l4.586 4.586 4.586-4.586c0.26-0.26 0.682-0.26 0.943 0l0.943 0.943c0.26 0.26 0.26 0.682 0 0.943l-4.586 4.586 4.586 4.586z"></path>
+</symbol>
+<symbol id="sura-icon-heart" viewBox="0 0 32 32">
+<path d="M23.2 1.333c-2.867 0.004-5.552 1.403-7.2 3.748-1.648-2.346-4.333-3.744-7.2-3.748-4.688-0-8.8 4.362-8.8 9.333 0 4.845 2.736 9.836 7.912 14.432 2.296 2.042 4.867 3.869 7.625 5.397l0.218 0.111c0.071 0.037 0.155 0.059 0.245 0.059s0.174-0.022 0.248-0.061l-0.003 0.001c2.975-1.64 5.545-3.466 7.883-5.546l-0.043 0.038c5.179-4.596 7.915-9.587 7.915-14.432 0-4.972-4.112-9.333-8.8-9.333zM16 29.527c-1.959-1.081-14.933-8.633-14.933-18.86 0-4.404 3.613-8.267 7.733-8.267 2.791 0.005 5.364 1.511 6.735 3.942 0.101 0.152 0.271 0.251 0.464 0.251 0 0 0 0 0 0v0c0.187 0 0.362-0.094 0.465-0.251 1.371-2.431 3.944-3.937 6.735-3.942 4.12 0 7.733 3.863 7.733 8.267 0 10.227-12.974 17.779-14.933 18.86z"></path>
+</symbol>
+<symbol id="sura-icon-telegram" viewBox="0 0 32 32">
+<path d="M27.314 4.686c-3.022-3.022-7.040-4.686-11.314-4.686s-8.292 1.664-11.314 4.686c-3.022 3.022-4.686 7.040-4.686 11.314s1.664 8.292 4.686 11.314c3.022 3.022 7.040 4.686 11.314 4.686s8.292-1.664 11.314-4.686c3.022-3.022 4.686-7.040 4.686-11.314s-1.664-8.292-4.686-11.314zM16 30.99c-8.265 0-14.989-6.724-14.989-14.99s6.724-14.989 14.989-14.989c8.265 0 14.99 6.724 14.99 14.989s-6.724 14.99-14.99 14.99z"></path>
+<path d="M25.062 6.165c-0.084-0.063-0.189-0.102-0.304-0.102-0.085 0-0.165 0.021-0.235 0.058l0.003-0.001-19.537 10.105c-0.169 0.087-0.274 0.262-0.273 0.452 0.001 0.195 0.113 0.364 0.276 0.447l0.003 0.001 5.11 2.555v5.063c0 0.132 0.045 0.264 0.136 0.36 0.101 0.106 0.235 0.16 0.369 0.16 0 0 0 0 0 0 0.090 0 0.175-0.024 0.248-0.065l-0.003 0.001 5.847-3.248 4.475 1.918c0.095 0.041 0.201 0.058 0.302 0.039 0.21-0.039 0.366-0.2 0.405-0.398l1.132-5.661c0.063-0.313-0.177-0.604-0.495-0.604-0.241-0-0.448 0.17-0.495 0.406l-1.010 5.051-4.143-1.776c-0.059-0.026-0.127-0.041-0.199-0.041-0.090 0-0.175 0.024-0.248 0.065l0.003-0.001-5.313 2.951v-4.531c0-0.197-0.112-0.367-0.277-0.451l-0.003-0.001-4.501-2.25 17.721-9.166-1.538 7.689c-0.063 0.313 0.177 0.604 0.495 0.604 0.241 0 0.448-0.17 0.496-0.406l1.744-8.72c0.006-0.030 0.010-0.064 0.010-0.099 0-0.164-0.078-0.31-0.2-0.403l-0.001-0.001z"></path>
+<path d="M21.786 10.297c-0.159-0.201-0.443-0.252-0.661-0.117l-8.758 5.389c-0.145 0.090-0.24 0.249-0.24 0.43 0 0 0 0 0 0v0 5.389c0 0.234 0.161 0.438 0.389 0.492 0.035 0.009 0.075 0.014 0.116 0.014h0c0.188 0 0.365-0.105 0.452-0.279l1.984-3.969 6.679-6.679c0.181-0.181 0.198-0.469 0.039-0.671zM14.295 16.99c-0.037 0.037-0.069 0.081-0.093 0.128l-0.001 0.003-1.064 2.128v-2.967l4.852-2.986-3.694 3.694z"></path>
+</symbol>
+<symbol id="sura-icon-instagram" viewBox="0 0 32 32">
+<path d="M27.314 4.686c-3.022-3.022-7.040-4.686-11.314-4.686s-8.292 1.664-11.314 4.686c-3.022 3.022-4.686 7.040-4.686 11.314s1.664 8.292 4.686 11.314c3.022 3.022 7.040 4.686 11.314 4.686s8.292-1.664 11.314-4.686c3.022-3.022 4.686-7.040 4.686-11.314s-1.664-8.292-4.686-11.314zM16 30.99c-8.265 0-14.99-6.724-14.99-14.99s6.724-14.99 14.99-14.99c8.265 0 14.99 6.724 14.99 14.99s-6.724 14.99-14.99 14.99z"></path>
+<path d="M21.74 6.063h-11.481c-2.314 0-4.196 1.883-4.196 4.196v11.481c0 2.314 1.883 4.196 4.196 4.196h11.481c2.314 0 4.196-1.883 4.196-4.196v-11.481c0-2.314-1.883-4.196-4.196-4.196zM24.926 21.74c0 1.757-1.429 3.186-3.186 3.186h-11.481c-1.757 0-3.186-1.429-3.186-3.186v-11.481c0-1.757 1.429-3.186 3.186-3.186h11.481c1.757 0 3.186 1.429 3.186 3.186v11.481h-0z"></path>
+<path d="M21.213 15.701c-0.149-2.658-2.313-4.797-4.972-4.917-3.069-0.138-5.596 2.389-5.456 5.459 0.121 2.66 2.262 4.822 4.92 4.969 1.122 0.062 2.173-0.233 3.050-0.781 0.273-0.171 0.318-0.551 0.090-0.779l-0.007-0.007c-0.166-0.166-0.424-0.191-0.623-0.067-0.628 0.396-1.392 0.632-2.211 0.632-0.017 0-0.034-0-0.052-0l0.003 0c-2.341-0.025-4.23-1.99-4.164-4.33 0.066-2.355 2.076-4.233 4.479-4.082 2.070 0.13 3.756 1.781 3.926 3.848 0.069 0.842-0.112 1.638-0.476 2.322-0.104 0.196-0.072 0.436 0.085 0.593l0.008 0.008c0.236 0.236 0.635 0.18 0.792-0.113 0.436-0.814 0.664-1.756 0.607-2.755zM21.39 11.284c0.744 0 1.347-0.603 1.347-1.347s-0.603-1.347-1.347-1.347c-0.744 0-1.347 0.603-1.347 1.347s0.603 1.347 1.347 1.347z"></path>
+</symbol>
+<symbol id="sura-icon-loupe" viewBox="0 0 32 32">
+<path d="M14.092 0c-7.77 0-14.092 6.322-14.092 14.092s6.322 14.092 14.092 14.092c7.771 0 14.092-6.322 14.092-14.092s-6.322-14.092-14.092-14.092zM14.092 25.583c-6.336 0-11.491-5.155-11.491-11.491s5.155-11.491 11.491-11.491 11.491 5.155 11.491 11.491-5.155 11.491-11.491 11.491z"></path>
+<path d="M31.619 29.78l-7.458-7.458c-0.235-0.235-0.56-0.381-0.92-0.381s-0.684 0.146-0.92 0.381v0c-0.235 0.235-0.381 0.56-0.381 0.92s0.146 0.684 0.381 0.92l7.458 7.458c0.235 0.235 0.559 0.381 0.918 0.381 0.001 0 0.001 0 0.002 0h-0c0 0 0.001 0 0.001 0 0.359 0 0.683-0.146 0.918-0.381l0-0c0.236-0.235 0.381-0.56 0.381-0.92s-0.146-0.684-0.381-0.92v0z"></path>
+</symbol>
+<symbol id="sura-icon-arrow-down" viewBox="0 0 32 32">
+<path d="M0 6.4l16 19.2 16-19.2h-32z"></path>
+</symbol>
+</defs>
+</svg>
+
+<!-- /include icon pack -->
+
+<!-- links -->
+<!-- /links -->
+<!-- scripts -->
+<script src="/template/js/vendor.js"></script>
+<script src="/template/js/sura.js"></script>
+<!-- /scripts -->
+</body>
