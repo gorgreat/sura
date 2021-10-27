@@ -119,3 +119,55 @@ button:not(:disabled) {
         text-align: right;        
     }
 }
+
+
+
+.custom-control {
+    cursor: pointer;
+    position: relative;
+    padding-left: 30px;
+}
+
+.custom-control__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    display: none;
+}
+
+.custom-control__icon {
+    height: 20px;
+    width: 20px;
+    border: solid 1px var(--green);
+    display: inline-block;
+    border-radius: 2px;
+    vertical-align: middle;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.custom-control__checkbox:checked+.custom-control__icon {
+    border-color: var(--green);
+    background: var(--green);
+}
+
+.custom-control__checkbox:checked+.custom-control__icon:after {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 11px;
+    border: solid 2px #fff;
+    border-width: 0 2px 2px 0;
+    position: relative;
+    left: 6px;
+    top: 2px;
+    transform: rotate(45deg)
+}
+
+.custom-control__label {
+    line-height: 1.5em;
+}
