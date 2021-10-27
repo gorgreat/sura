@@ -178,6 +178,7 @@
     place-items: center;
     border: none;
     padding: 0;
+    display: none;
 }
 
 .header-search .sura-icon {
@@ -411,6 +412,9 @@
     }
     .nav-main>.nav-main__list>.nav-main__item {
         margin-bottom: 0;
+    }
+    .header-search {
+        display: block;
     }
 
 }
