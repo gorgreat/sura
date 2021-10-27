@@ -13,25 +13,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-3">
-                    <div class="product__figure">
-                        <img src="template/img/test/product.jpg" alt="" class="product__img" loading="lazy" width="268" height="192">
-                        <div class="product__label">3X001</div>
-                    </div>
-                    <div class="product__tumbs">
-                        <div class="product__thumb active">
-                            <img src="template/img/test/product.jpg" alt="Мотор отопителя HOFER" class="product__img-thumb">
+                    <div class="product__gallery">
+                        <div class="product__figure">
+                            <img src="template/img/test/product.jpg" alt="" class="product__img" loading="lazy" width="268" height="192">
+                            <div class="product__label">3X001</div>
                         </div>
-                        <div class="product__thumb">
-                            <img src="template/img/test/product.jpg" alt="Мотор отопителя HOFER"
-                                class="product__img-thumb">
-                        </div>
-                        <div class="product__thumb">
-                            <img src="template/img/test/product.jpg" alt="Мотор отопителя HOFER"
-                                class="product__img-thumb">
-                        </div>
-                        <div class="product__thumb">
-                            <img src="template/img/test/product.jpg" alt="Мотор отопителя HOFER"
-                                class="product__img-thumb">
+                        <div class="product__tumbs">
+                            <div class="product__thumb active">
+                                <img src="template/img/test/product.jpg" alt="Мотор отопителя HOFER" class="product__img-thumb">
+                            </div>
+                            <div class="product__thumb">
+                                <img src="template/img/test/product-2.jpg" alt="Мотор отопителя HOFER"
+                                    class="product__img-thumb">
+                            </div>
+                            <div class="product__thumb">
+                                <img src="template/img/test/product.jpg" alt="Мотор отопителя HOFER"
+                                    class="product__img-thumb">
+                            </div>
+                            <div class="product__thumb">
+                                <img src="template/img/test/product-2.jpg" alt="Мотор отопителя HOFER"
+                                    class="product__img-thumb">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -45,9 +47,16 @@
                             <h1 class="product__title">Мотор отопителя HOFER Газель (до 2003г.) 511.3730 в уп. HF625 232</h1>
                         </div>
                         <div class="col-12 col-md-3">
-                            <div class="product__favorite favorite">
+                            <div class="product__favorite favorite js-to-favorite" data-id="641" data-isfavorite>
+                                <svg class="sura-icon sura-icon-heart" width="20" height="20">
+                                    <use xlink:href="#sura-icon-heart"></use>
+                                </svg>
+                                <svg class="sura-icon sura-icon-heart-fill" width="20" height="20">
+                                    <use xlink:href="#sura-icon-heart-fill"></use>
+                                </svg>
                                 В список желаний
                             </div>
+                            
                         </div>
                     </div>
                     <!-- /product info header -->
@@ -91,6 +100,9 @@
 
                             <!-- in stock -->
                             <div class="product__instock instock">
+                                <svg class="sura-icon sura-icon-check" width="30" height="30">
+                                    <use xlink:href="#sura-icon-check"></use>
+                                </svg>
                                 В наличии
                             </div>
                             <!-- /in stock -->
@@ -109,16 +121,15 @@
                             <!-- /price -->
 
                             <!-- product-to-cart -->
-                            <div class="product-to-cart">
+                            <div class="product-to-cart" data-id="641">
                                 <div class="quantity js-quantity">
                                     <button class="quantity__minus js-quantity__minus" type="button">–</button>
-                                    <input type="text" name="ad" class="quantity__input" min="0"
+                                    <input type="number" name="ad" class="quantity__input" min="1"
                                         max="50" value="1">
                                     <button class="quantity__plus js-quantity__plus" type="button">+</button>
                                 </div>
 
                                 <button class="product-to-cart__btn btn btn-success">В корзину</button>
-
                             </div>
                             <!-- /product-to-cart -->
 
