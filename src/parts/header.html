@@ -26,141 +26,143 @@
 <body>
 
 
- <header class="header">
-     <!-- header-service-bar -->
-     <div class="header-service-bar">
-        <div class="container">
-            <div class="header-service-bar__row">
+<header class="header">
+    <!-- header-service-bar -->
+    <div class="header-service-bar">
+    <div class="container">
+        <div class="header-service-bar__row">
 
-                <!-- header-service-panel -->
-                <div class="header-service-panel">
-                    
-                    <div class="shop-cart-info">
-                        <a href="cart.html" class="shop-cart-info__link">
-                            <svg class="sura-icon sura-icon-cart" width="16" height="16">
-                                <use xlink:href="#sura-icon-cart"></use>
-                            </svg>
-                            <span class="shop-cart-info__count js-shop-cart-info">2228</span>
-                        </a>
-                    </div>
-
-                    <div class="favorite-info">
-                        <a href="favorite.html" class="favorite-info__link">
-                            <svg class="sura-icon sura-icon-heart-fill" width="16" height="16">
-                                <use xlink:href="#sura-icon-heart-fill"></use>
-                            </svg>
-                            <span class="favorite__count js-favorite-count">3456</span>
-                        </a>
-                    </div>
-
-                </div>
-                <!-- /header-service-panel -->
-
-                <!-- auth -->
-                <div class="auth">
-
-                    <div class="auth__beforelogin" style="display: none;">
-                        <button class="auth__button auth__button_login js-auth__login">
-                            <svg class="sura-icon sura-icon-user" width="16" height="16">
-                                <use xlink:href="#sura-icon-user"></use>
-                            </svg>
-                            <span class="auth__label">Войти</span>
-                        </button>
-                        <span> | </span>
-                        <button
-                            class="auth__button auth__button_register js-auth__register">
-                            <span class="auth__label">Зарегистрироваться</span>
-                        </button>
-                    </div>
-
-                    <!-- после входа -->
-                    <div class="auth__afterlogin">
-                    
-                        <a href="/profile" class="auth__button auth__button_lk">
-                            <svg class="sura-icon sura-icon-user" width="16" height="16">
-                                <use xlink:href="#sura-icon-user"></use>
-                            </svg>
-                            <span class="auth__label">Здравствуйте, Евгений Цапенко</span>
-                        </a>
-                        <span> | </span>
-                        <a href="/logout" class="auth__button auth__button_logout">Выход</a>
-                    </div>
-                </div>
-                <!-- /auth -->
-            </div>
-        </div>
-     </div>
-     <!-- /header-service-bar -->
-
-     <!-- header main -->
-     <div class="header-main">
-        <div class="container">
-            <div class="row">
-                <div class="header__col-1">
-                    <a href="/" class="logo">
-                        <img src="template/img/logo-sura-hor.png" width="346" height="111" alt="Sura Auto"
-                            class="logo__img">
+            <!-- header-service-panel -->
+            <div class="header-service-panel">
+                
+                <div class="shop-cart-info">
+                    <a href="cart.html" class="shop-cart-info__link">
+                        <svg class="sura-icon sura-icon-cart" width="16" height="16">
+                            <use xlink:href="#sura-icon-cart"></use>
+                        </svg>
+                        <span class="shop-cart-info__count js-shop-cart-info">2228</span>
                     </a>
                 </div>
-                <div class="header__col-2">
-                    <nav class="nav-main">
-                        <ul class="nav-main__list">
-                            <li class="nav-main__item">
-                                <a class="nav-main__link" href="#">О компании</a>
-                            </li>
-                            <li class="nav-main__item parent current">
-                                <a class="nav-main__link" href="#">Клиентам</a>
-                                <ul class="nav-main__list">
-                                    <li class="nav-main__item">
-                                        <a class="nav-main__link" href="#">Клиентам 1</a>
-                                    </li>
-                                    <li class="nav-main__item">
-                                        <a class="nav-main__link" href="#">Клиентам 2</a>
-                                    </li>
-                                </ul>
-                                <i class="nav-main__icon">
-                                    <svg class="sura-icon sura-icon-arrow-down" width="10" height="10">
-                                        <use xlink:href="#sura-icon-arrow-down"></use>
-                                    </svg>
-                                </i>
-                            </li>
-                            <li class="nav-main__item">
-                                <a class="nav-main__link" href="#">Поставщикам</a>
-                            </li>
-                            <li class="nav-main__item  parent">
-                                <a class="nav-main__link" href="#">Ассортимент</a>
-                                <ul class="nav-main__list">
-                                    <li class="nav-main__item">
-                                        <a class="nav-main__link" href="#">Ассортимент 1</a>
-                                    </li>
-                                    <li class="nav-main__item">
-                                        <a class="nav-main__link" href="#">Ассортимент 2</a>
-                                    </li>
-                                </ul>
-                                <i class="nav-main__icon">
-                                    <svg class="sura-icon sura-icon-arrow-down" width="10" height="10">
-                                        <use xlink:href="#sura-icon-arrow-down"></use>
-                                    </svg>
-                                </i>
-                            </li>
-                            <li class="nav-main__item">
-                                <a class="nav-main__link" href="#">Акции</a>
-                            </li>
-                            <li class="nav-main__item">
-                                <a class="nav-main__link" href="#">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <button class="header-search" type="button">
-                        <svg class="sura-icon sura-icon-loupe">
-                            <use xlink:href="#sura-icon-loupe"></use>
+
+                <div class="favorite-info">
+                    <a href="favorite.html" class="favorite-info__link">
+                        <svg class="sura-icon sura-icon-heart-fill" width="16" height="16">
+                            <use xlink:href="#sura-icon-heart-fill"></use>
                         </svg>
+                        <span class="favorite__count js-favorite-count">3456</span>
+                    </a>
+                </div>
+
+            </div>
+            <!-- /header-service-panel -->
+
+            <!-- auth -->
+            <div class="auth">
+
+                <div class="auth__beforelogin">
+                    <button class="auth__button auth__button_login js-auth__login">
+                        <svg class="sura-icon sura-icon-user" width="16" height="16">
+                            <use xlink:href="#sura-icon-user"></use>
+                        </svg>
+                        <span class="auth__label">Войти</span>
+                    </button>
+                    <span> | </span>
+                    <button
+                        class="auth__button auth__button_register js-auth__register">
+                        <span class="auth__label">Зарегистрироваться</span>
                     </button>
                 </div>
+
+                <!-- после входа -->
+                <!--
+                <div class="auth__afterlogin">
+                
+                    <a href="/profile" class="auth__button auth__button_lk">
+                        <svg class="sura-icon sura-icon-user" width="16" height="16">
+                            <use xlink:href="#sura-icon-user"></use>
+                        </svg>
+                        <span class="auth__label">Здравствуйте, Евгений Цапенко</span>
+                    </a>
+                    <span> | </span>
+                    <a href="/logout" class="auth__button auth__button_logout">Выход</a>
+                </div>
+                -->
+            </div>
+            <!-- /auth -->
+        </div>
+    </div>
+    </div>
+    <!-- /header-service-bar -->
+
+    <!-- header main -->
+    <div class="header-main">
+    <div class="container">
+        <div class="row">
+            <div class="header__col-1">
+                <a href="/" class="logo">
+                    <img src="template/img/logo-sura-hor.png" width="346" height="111" alt="Sura Auto"
+                        class="logo__img">
+                </a>
+            </div>
+            <div class="header__col-2">
+                <nav class="nav-main">
+                    <ul class="nav-main__list">
+                        <li class="nav-main__item">
+                            <a class="nav-main__link" href="#">О компании</a>
+                        </li>
+                        <li class="nav-main__item parent current">
+                            <a class="nav-main__link" href="#">Клиентам</a>
+                            <ul class="nav-main__list">
+                                <li class="nav-main__item">
+                                    <a class="nav-main__link" href="#">Клиентам 1</a>
+                                </li>
+                                <li class="nav-main__item">
+                                    <a class="nav-main__link" href="#">Клиентам 2</a>
+                                </li>
+                            </ul>
+                            <i class="nav-main__icon">
+                                <svg class="sura-icon sura-icon-arrow-down" width="10" height="10">
+                                    <use xlink:href="#sura-icon-arrow-down"></use>
+                                </svg>
+                            </i>
+                        </li>
+                        <li class="nav-main__item">
+                            <a class="nav-main__link" href="#">Поставщикам</a>
+                        </li>
+                        <li class="nav-main__item  parent">
+                            <a class="nav-main__link" href="#">Ассортимент</a>
+                            <ul class="nav-main__list">
+                                <li class="nav-main__item">
+                                    <a class="nav-main__link" href="#">Ассортимент 1</a>
+                                </li>
+                                <li class="nav-main__item">
+                                    <a class="nav-main__link" href="#">Ассортимент 2</a>
+                                </li>
+                            </ul>
+                            <i class="nav-main__icon">
+                                <svg class="sura-icon sura-icon-arrow-down" width="10" height="10">
+                                    <use xlink:href="#sura-icon-arrow-down"></use>
+                                </svg>
+                            </i>
+                        </li>
+                        <li class="nav-main__item">
+                            <a class="nav-main__link" href="#">Акции</a>
+                        </li>
+                        <li class="nav-main__item">
+                            <a class="nav-main__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header-search" type="button">
+                    <svg class="sura-icon sura-icon-loupe">
+                        <use xlink:href="#sura-icon-loupe"></use>
+                    </svg>
+                </button>
             </div>
         </div>
-     </div>
-     <!-- /header main -->
- </header>
+    </div>
+    </div>
+    <!-- /header main -->
+</header>
 
 
