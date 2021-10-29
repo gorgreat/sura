@@ -27,24 +27,72 @@
 
 
  <header class="header">
+     <!-- header-service-bar -->
      <div class="header-service-bar">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="header-service-pane">
-                    <!-- тут ожидаю корзину и избранное -->
+            <div class="header-service-bar__row">
+
+                <!-- header-service-panel -->
+                <div class="header-service-panel">
+                    
+                    <div class="shop-cart-info">
+                        <a href="cart.html" class="shop-cart-info__link">
+                            <svg class="sura-icon sura-icon-cart" width="16" height="16">
+                                <use xlink:href="#sura-icon-cart"></use>
+                            </svg>
+                            <span class="shop-cart-info__count js-shop-cart-info">2228</span>
+                        </a>
+                    </div>
+
+                    <div class="favorite-info">
+                        <a href="favorite.html" class="favorite-info__link">
+                            <svg class="sura-icon sura-icon-heart-fill" width="16" height="16">
+                                <use xlink:href="#sura-icon-heart-fill"></use>
+                            </svg>
+                            <span class="favorite__count js-favorite-count">3456</span>
+                        </a>
+                    </div>
+
                 </div>
+                <!-- /header-service-panel -->
+
+                <!-- auth -->
                 <div class="auth">
-                    <svg class="sura-icon sura-icon-user"><use xlink:href="#sura-icon-user"></use></svg>
-                    <span class="auth__button auth__login js-auth__login">Войти</span>
-                    <span> | </span>
-                    <span class="auth__button auth__register js-auth__register">Зарегистрироваться</span>
-                   <!-- после входа
-                   <a href="/lk" class="auth__link">ООО "Вектор"</a>
-                   -->
+
+                    <div class="auth__beforelogin" style="display: none;">
+                        <button class="auth__button auth__button_login js-auth__login">
+                            <svg class="sura-icon sura-icon-user" width="16" height="16">
+                                <use xlink:href="#sura-icon-user"></use>
+                            </svg>
+                            <span class="auth__label">Войти</span>
+                        </button>
+                        <span> | </span>
+                        <button
+                            class="auth__button auth__button_register js-auth__register">
+                            <span class="auth__label">Зарегистрироваться</span>
+                        </button>
+                    </div>
+
+                    <!-- после входа -->
+                    <div class="auth__afterlogin">
+                    
+                        <a href="/profile" class="auth__button auth__button_lk">
+                            <svg class="sura-icon sura-icon-user" width="16" height="16">
+                                <use xlink:href="#sura-icon-user"></use>
+                            </svg>
+                            <span class="auth__label">Здравствуйте, Евгений Цапенко</span>
+                        </a>
+                        <span> | </span>
+                        <a href="/logout" class="auth__button auth__button_logout">Выход</a>
+                    </div>
                 </div>
+                <!-- /auth -->
             </div>
         </div>
      </div>
+     <!-- /header-service-bar -->
+
+     <!-- header main -->
      <div class="header-main">
         <div class="container">
             <div class="row">
@@ -112,6 +160,7 @@
             </div>
         </div>
      </div>
+     <!-- /header main -->
  </header>
 
 

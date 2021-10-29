@@ -28,24 +28,72 @@
 
 
  <header class="header">
+     <!-- header-service-bar -->
      <div class="header-service-bar">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="header-service-pane">
-                    <!-- тут ожидаю корзину и избранное -->
+            <div class="header-service-bar__row">
+
+                <!-- header-service-panel -->
+                <div class="header-service-panel">
+                    
+                    <div class="shop-cart-info">
+                        <a href="cart.html" class="shop-cart-info__link">
+                            <svg class="sura-icon sura-icon-cart" width="16" height="16">
+                                <use xlink:href="#sura-icon-cart"></use>
+                            </svg>
+                            <span class="shop-cart-info__count js-shop-cart-info">2228</span>
+                        </a>
+                    </div>
+
+                    <div class="favorite-info">
+                        <a href="favorite.html" class="favorite-info__link">
+                            <svg class="sura-icon sura-icon-heart-fill" width="16" height="16">
+                                <use xlink:href="#sura-icon-heart-fill"></use>
+                            </svg>
+                            <span class="favorite__count js-favorite-count">3456</span>
+                        </a>
+                    </div>
+
                 </div>
+                <!-- /header-service-panel -->
+
+                <!-- auth -->
                 <div class="auth">
-                    <svg class="sura-icon sura-icon-user"><use xlink:href="#sura-icon-user"></use></svg>
-                    <span class="auth__button auth__login js-auth__login">Войти</span>
-                    <span> | </span>
-                    <span class="auth__button auth__register js-auth__register">Зарегистрироваться</span>
-                   <!-- после входа
-                   <a href="/lk" class="auth__link">ООО "Вектор"</a>
-                   -->
+
+                    <div class="auth__beforelogin" style="display: none;">
+                        <button class="auth__button auth__button_login js-auth__login">
+                            <svg class="sura-icon sura-icon-user" width="16" height="16">
+                                <use xlink:href="#sura-icon-user"></use>
+                            </svg>
+                            <span class="auth__label">Войти</span>
+                        </button>
+                        <span> | </span>
+                        <button
+                            class="auth__button auth__button_register js-auth__register">
+                            <span class="auth__label">Зарегистрироваться</span>
+                        </button>
+                    </div>
+
+                    <!-- после входа -->
+                    <div class="auth__afterlogin">
+                    
+                        <a href="/profile" class="auth__button auth__button_lk">
+                            <svg class="sura-icon sura-icon-user" width="16" height="16">
+                                <use xlink:href="#sura-icon-user"></use>
+                            </svg>
+                            <span class="auth__label">Здравствуйте, Евгений Цапенко</span>
+                        </a>
+                        <span> | </span>
+                        <a href="/logout" class="auth__button auth__button_logout">Выход</a>
+                    </div>
                 </div>
+                <!-- /auth -->
             </div>
         </div>
      </div>
+     <!-- /header-service-bar -->
+
+     <!-- header main -->
      <div class="header-main">
         <div class="container">
             <div class="row">
@@ -113,6 +161,7 @@
             </div>
         </div>
      </div>
+     <!-- /header main -->
  </header>
 
 
@@ -406,6 +455,9 @@
 <!-- include icon pack -->
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="sura-icon-cart" viewBox="0 0 32 32">
+<path d="M12.308 29.090c0 0.804-0.24 1.49-0.72 2.058-0.482 0.568-1.062 0.852-1.74 0.852-0.68 0-1.26-0.284-1.742-0.852-0.448-0.531-0.721-1.224-0.721-1.98 0-0.027 0-0.055 0.001-0.082l-0 0.004c0-0.802 0.24-1.488 0.72-2.056s1.060-0.852 1.74-0.852c0.68 0 1.26 0.284 1.74 0.852s0.72 1.254 0.72 2.056zM29.538 29.090c0 0.804-0.24 1.49-0.72 2.058s-1.060 0.852-1.74 0.852c-0.68 0-1.26-0.284-1.74-0.852-0.45-0.532-0.723-1.225-0.723-1.983 0-0.027 0-0.053 0.001-0.079l-0 0.004c0-0.802 0.24-1.488 0.72-2.056s1.060-0.852 1.74-0.852c0.68 0 1.26 0.284 1.74 0.852 0.482 0.568 0.722 1.254 0.722 2.056zM32 4.364v11.636c0 0.007 0 0.015 0 0.024 0 0.354-0.116 0.682-0.311 0.946l0.003-0.004c-0.18 0.26-0.459 0.441-0.782 0.487l-0.006 0.001-20.078 2.774c0.014 0.106 0.042 0.268 0.088 0.488 0.044 0.22 0.082 0.42 0.114 0.602s0.048 0.348 0.048 0.5c0 0.242-0.154 0.728-0.46 1.454h17.692c0.351 0.003 0.663 0.171 0.862 0.429l0.002 0.003c0.228 0.266 0.366 0.614 0.366 0.994 0 0.011-0 0.021-0 0.032l0-0.002c0 0.394-0.12 0.734-0.366 1.022-0.201 0.261-0.513 0.428-0.863 0.432h-19.693c-0.352-0.003-0.664-0.171-0.864-0.429l-0.002-0.003c-0.228-0.266-0.366-0.614-0.366-0.994 0-0.010 0-0.020 0-0.029l-0 0.001c0-0.212 0.070-0.512 0.212-0.9 0.216-0.579 0.407-1.025 0.615-1.46l-0.047 0.11 0.394-0.864-3.404-18.704h-3.924c-0.351-0.004-0.663-0.171-0.862-0.429l-0.002-0.003c-0.228-0.266-0.366-0.614-0.366-0.995 0-0.010 0-0.021 0-0.031l-0 0.002c0-0.394 0.12-0.734 0.366-1.022 0.201-0.261 0.513-0.428 0.863-0.432h4.925c0.204 0 0.388 0.050 0.548 0.148 0.16 0.1 0.288 0.216 0.384 0.352 0.106 0.16 0.192 0.345 0.247 0.542l0.003 0.014c0.070 0.236 0.12 0.436 0.144 0.604l0.106 0.67c0.046 0.28 0.074 0.474 0.086 0.58h23.096c0.352 0.002 0.664 0.169 0.864 0.427l0.002 0.003c0.228 0.266 0.366 0.614 0.366 0.994 0 0.011-0 0.021-0 0.032l0-0.002z"></path>
+</symbol>
 <symbol id="sura-icon-check" viewBox="0 0 32 32">
 <path d="M28.162 4.285l-15.754 15.754-8.569-8.569-3.838 3.838 12.407 12.407 19.593-19.593-3.838-3.838z"></path>
 </symbol>

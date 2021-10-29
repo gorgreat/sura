@@ -4,43 +4,148 @@
 }
 
 .header-service-bar {
-    padding: 2px 0;
     background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+.header-service-bar__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 12px 0;
 }
 
-.header-service-pane {
 
+.header-service-panel {
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
 }
 
-.auth {
+.shop-cart-info {
+    flex: 0 0 auto;
+}
+
+.shop-cart-info__link {
     font-weight: normal;
     font-size: 14px;
-    line-height: 1.2em;
-    text-align: right;
+    color: var(--base);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
-.auth > * {
+
+.sura-icon-cart {
+    font-size: 16px;
+    color: var(--green-dark);
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.shop-cart-info__count {
+    color: var(--font);
+    line-height: 16px;
+}
+
+
+.favorite-info {
+    flex: 0 0 auto;
+}
+
+.favorite-info__link {
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--base);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sura-icon-heart-fill {
+    font-size: 16px;
+    color: var(--green-dark);
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.favorite__count {
+    color: var(--font);
+    line-height: 16px;
+}
+
+
+
+.auth {}
+
+.auth__beforelogin {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 7px 5px;
+}
+.auth__beforelogin > span,
+.auth__afterlogin > span {
     display: inline-block;
     vertical-align: middle;
+    font-size: 14px;
 }
-.sura-icon-user {
-    font-size: 16px;
-}
-
 .auth__button {
-    cursor: pointer;
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--font);
+    text-decoration: none;
+    border:none;
+    background: none;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    padding: 0;
+    line-height: 16px;
+   
 }
 
-.auth__login {
+.auth__button_login {
     font-weight: 400;
 }
 
-.auth__register {
-    font-weight: 300;
+.sura-icon-user {
+    font-size: 16px;
+}
+.auth__button_login .sura-icon-user {
+    color: var(--green-dark);
 }
 
-.auth__link {
-    text-decoration: none;
+.auth__label {
     color: var(--font);
+    line-height: 16px;
+}
+.auth__button_login .auth__label {
+    font-weight: 400;
+}
+
+.auth__button_register {
+
+}
+
+.auth__afterlogin {
+    padding: 7px 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.auth__button_lk,
+.auth__button_lk span {
+   
+}
+
+.auth__button_logout {
+   
+    font-weight: 300;
 }
 
 
@@ -316,7 +421,18 @@
 
 
 
+@media screen and (min-width: 576px){
+    .header-service-bar__row {
+        justify-content: end;
+        gap: 25px;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
 
+
+
+    
+}
 
 @media only screen and (max-width : 767px) {
 
@@ -377,6 +493,19 @@
 
 
 @media screen and (min-width: 768px) {
+    .auth__afterlogin {
+        background-color: var(--base);
+        color: #fff;
+    }
+    .auth__button_lk,
+    .auth__button_lk span {
+        color: #fff;
+    }
+
+    .auth__button_logout {
+        color: #fff;
+    }
+
     .header__col-1 {
         flex: 0 0 100%;
         max-width: 100%;
