@@ -9,6 +9,8 @@
 .interesting__link {
     display: block;
     position: relative;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .interesting__img {
@@ -17,6 +19,7 @@
     height: 292px;
     object-fit: cover;
     border-radius: 20px;
+    transition: transform 0.25s ease-in-out;
 }
 
 .interesting__title {
@@ -40,4 +43,12 @@
     text-transform: uppercase;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
     border-radius: 20px;
+    transition: background 0.25s ease-in-out;
+}
+
+.interesting__item:hover .interesting__img {
+    transform: scale(1.1, 1.1);
+}
+.interesting__item:hover .interesting__title {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
