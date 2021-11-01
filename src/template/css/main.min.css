@@ -3974,6 +3974,81 @@ button:not(:disabled) {
   color: #fff;
   border-color: var(--base); }
 
+/* search */
+.search {
+  margin-bottom: 40px;
+  background-color: var(--gray-ea);
+  padding: 20px 20px;
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; }
+
+.search__field {
+  border: 1px solid #BEBEBE;
+  border-radius: 6px;
+  overflow: hidden;
+  flex: 1 1;
+  position: relative;
+  gap: 5px;
+  background: #fff;
+  display: flex; }
+
+.search__icon {
+  flex: 0 0 45px;
+  border-right: 1px solid #BEBEBE;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center; }
+
+.search__field .sura-icon-loupe {
+  font-size: 19px;
+  color: #BEBEBE; }
+
+.search__input {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
+  color: var(--font);
+  height: 48px;
+  display: block;
+  width: 100%;
+  padding: 0 10px;
+  border: none; }
+
+.search__button {
+  border: none;
+  height: 50px;
+  background-color: var(--base);
+  border-radius: 6px;
+  padding: 9px 20px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  flex: 1 0 100%; }
+
+.search__button:hover {
+  background-color: var(--green); }
+
+@media screen and (min-width: 576px) {
+  .search {
+    padding: 27px 50px;
+    border-radius: 10px;
+    display: flex; }
+  .search__button {
+    flex: 0 0 auto; }
+  .search__icon {
+    display: flex; } }
+
+/* /search */
 /*TABS*/
 .tabs__list {
   display: flex;
