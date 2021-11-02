@@ -168,6 +168,35 @@ button:not(:disabled) {
     transform: rotate(45deg)
 }
 
+.custom-control__icon-radio {
+    height: 20px;
+    width: 20px;
+    border: solid 1px var(--green);
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.custom-control__checkbox:checked+.custom-control__icon-radio:after {
+    content: '';
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color: var(--green);
+    border-radius: 50%;
+    position: relative;
+    left: 4px;
+    top: 4px;
+}
+
+.custom-control__checkbox:checked+.custom-control__icon-radio:after {
+    display: block;
+}
+
 .custom-control__label {
     line-height: 1.5em;
 }
