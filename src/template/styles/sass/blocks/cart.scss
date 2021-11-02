@@ -48,6 +48,7 @@
 .cart-main__item {
     background: #F5F5F5;
     padding: 20px 12px;
+    margin-bottom: 30px;
 }
 .cart-main__item:nth-child(2n) {
     background: rgba(245, 245, 245, 0.3);
@@ -59,6 +60,7 @@
 .cart-item {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .cart-item__header {
@@ -133,7 +135,6 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 1.5em;
-    columns: 2;
     column-gap: 20px;
     display: none;
 }
@@ -153,6 +154,9 @@
 .cart-item__service {
     text-align: right;
     margin-bottom: 12px;
+    position: absolute;
+    right: 12px;
+    top: 18px;
 }
 
 .cart-item__delete {
@@ -160,6 +164,7 @@
     background: transparent;
     appearance: none;
     cursor: pointer;
+    padding: 0;
 }
 
 .cart-item__delete .sura-icon {
@@ -171,17 +176,20 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    height: 100%;
 }
 
 
 .cart-item__footer-col-1 {
     flex: 0 0 100%;
     padding: 0 12px;
+    margin-bottom: 20px;
 }
 
 .cart-item__footer-col-2 {
     flex: 0 0 100%;
     padding: 0 12px;
+    margin-bottom: 20px;
 }
 
 .cart-item__footer-col-3 {
@@ -205,6 +213,7 @@
     font-size: 30px;
     text-align: center;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .cart-item__footer-col-2 .quantity {
@@ -216,6 +225,7 @@
     margin-bottom: 20px;
     background: rgba(155, 197, 37, 0.3);
     padding: 12px 12px;
+    text-align: center;
 }
 
 .cart-footer__row {
@@ -224,9 +234,10 @@
 .cart-footer__col-2 {
     text-align: right;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
-    gap: 40px
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .cart-footer__label {
@@ -257,6 +268,7 @@
 
 
 @media screen and (min-width: 576px ) {
+
     .cart-item__header {
         flex: 0 0 14.5%;
         margin-bottom: 0;
@@ -270,8 +282,12 @@
 
     .cart-item__footer {
         flex: 1 0 42%;
+        padding-top: 20px;
     }
 
+    .cart-item {
+        margin-bottom: 0;
+    }
     .cart-item__footer-col-1 {
         flex: 0 0 33.333%;
     }
@@ -295,9 +311,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .cart-item__properties {
-        columns: 1;
-    }
+
     .cart-item__footer-col-1 {
         flex: 1;
     }
@@ -321,9 +335,19 @@
     .cart-item__main {
         border-right: 1px solid rgba(102, 102, 102, 0.5);
     }
+    .cart-footer__col-2 {
+        justify-content: end;
+    }
+    .cart-footer {
+        text-align: left;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
+    .cart-item__properties {
+        columns: 1;
+    }
     .cart-item__title {
         font-size: 18px;
     }
@@ -350,6 +374,17 @@
     .cart-header__col-1 {
         flex: 0 0 58%;
     }
+
+    .cart-item__footer-col-1 {
+        margin-bottom: 0;
+    }
+
+    .cart-item__footer-col-2 {
+        margin-bottom: 0;
+    }
+
+    
+
 }
 
 @media screen and (min-width: 1170px) {
