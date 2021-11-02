@@ -454,6 +454,122 @@
     <!-- /footer bottom -->
 </footer>
 
+<!-- modals -->
+
+<!-- modal_auth -->
+<dialog class="modal modal_auth">
+    <div class="modal__wr">
+        <div class="modal__content">
+            <div class="modal-tabs">
+                <div class="modal-tabs__tab active">Вход</div>
+                <div class="modal-tabs__tab js-auth__register">Регистрация</div>
+            </div>
+            <div class="modal__header">Вход юридического лица</div>
+            <form action="/login" class="modal__form form-auth js-form-submit">
+                <input name="form" type="hidden" value="auth">
+                <div class="modal__field">
+                    <input type="email" name="e" class="form__input" value="" placeholder="E-mail" required>
+                </div>
+                <div class="modal__field">
+                    <input type="password" name="pwd" class="form__input" value="" placeholder="Пароль" required>
+                </div>
+                <div class="row">
+                    <div class="col modal__col-label">
+                        <button type="button" class="modal__link js-forgot-pwd">Забыли пароль?</button>
+                    </div>
+                    <div class="col-auto modal__col-btn">
+                        <button type="submit" class="btn btn-primary modal__btn">Войти</button>
+                    </div>
+                </div>
+            </form>
+            <div class="form__success"></div>
+            <div class="form__error">Пользователь не найден</div>
+        </div>
+    </div>
+</dialog>
+<!-- /modal_auth -->
+
+
+<!-- modal_reg -->
+<dialog class="modal modal_reg">
+    <div class="modal__wr">
+        <div class="modal__content">
+            <div class="modal-tabs">
+                <div class="modal-tabs__tab js-auth__login">Вход</div>
+                <div class="modal-tabs__tab active">Регистрация</div>
+            </div>
+            <div class="modal__header">Регистрация юридического лица</div>
+            <form action="/reg" class="modal__form form-auth js-form-submit">
+                <input name="form" type="hidden" value="reg">
+                <div class="modal__field">
+                     <input type="text" name="n" class="form__input" value="" required
+                         placeholder="Юридическое название либо фамилия имя отчество">
+                 </div>
+                <div class="modal__field">
+                    <input type="email" name="e" class="form__input" value="" placeholder="E-mail" required>
+                </div>
+                <div class="modal__field">
+                    <input type="tel" name="t" class="form__input" value="" placeholder="Телефон" required>
+                </div>
+                <div class="row">
+                    <div class="col modal__col-label">
+                        <label class="custom-control">
+                            <input type="checkbox" value="1" checked name="pd" class="custom-control__checkbox middle"
+                                checked="" required>
+                            <span class="custom-control__icon"></span><span
+                                class="custom-control__label">Я согласен с <a href="politica.html">условиями передачи
+                                    информации</a></span>
+                        </label>
+                        
+                    </div>
+                    <div class="col-auto modal__col-btn">
+                        <button type="submit" class="btn btn-primary modal__btn">Регистрация</button>
+                    </div>
+                </div>
+            </form>
+            <div class="form__success">Вы успешно зарегистрированы!</div>
+            <div class="form__error">
+                Произошла ошибка.
+                <div></div>
+            </div>
+        </div>
+    </div>
+</dialog>
+<!-- /modal_reg -->
+
+
+<!-- modal_forgot -->
+<dialog class="modal modal_forgot">
+    <div class="modal__wr">
+        <div class="modal__content">
+            <div class="modal__header">Восстановление пароля</div>
+            <form action="/forgot" class="modal__form form-forgot  js-form-submit">
+                <input name="form" type="hidden" value="forgot">
+                <div class="modal__field">
+                    <input type="email" name="e" class="form__input" value="" placeholder="E-mail" required>
+                </div>
+                
+                <div class="row">
+                    <div class="col modal__col-label">
+                        На вашу почту будет отправлена инструкция с дальнейшими действиями.
+                    </div>
+                    <div class="col-auto modal__col-btn">
+                        <button type="submit" class="btn btn-primary modal__btn">Выслать пароль</button>
+                    </div>
+                </div>
+            </form>
+            <div class="form__success">На вашу почту отправлена инструкция с дальнейшими действиями.</div>
+            <div class="form__error">
+                Пользователь с таким email не найден.
+            </div>
+        </div>
+    </div>
+</dialog>
+<!-- /modal_forgot -->
+
+<!-- /modals -->
+
+
 <!-- include icon pack -->
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>

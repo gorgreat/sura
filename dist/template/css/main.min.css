@@ -5335,6 +5335,121 @@ button:not(:disabled) {
   .cart-item__footer-col-3 {
     flex: 0 0 33.333%; } }
 
+dialog {
+  /*position: fixed;
+    z-index: 101;
+    top: 50%;
+    transform: translateY(-50%);*/ }
+
+dialog {
+  display: none;
+  position: fixed;
+  z-index: 110;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  max-height: 100%;
+  overflow: auto;
+  width: auto;
+  height: auto;
+  border: none;
+  padding: 0;
+  align-items: center;
+  justify-content: center; }
+
+dialog[open] {
+  display: flex; }
+
+.modal_auth .modal__wr {
+  width: 100%;
+  max-width: 90%; }
+
+.modal_auth .modal__wr,
+.modal_reg .modal__wr,
+.modal_forgot .modal__wr {
+  max-width: 535px; }
+
+.modal__wr {
+  margin: auto;
+  background: #FFFFFF;
+  border: 1px solid rgba(102, 102, 102, 0.5);
+  border-radius: 30px;
+  padding: 20px 40px; }
+
+.modal__wr.no-padding {
+  padding: 0; }
+
+.modal-tabs {
+  display: flex;
+  margin: -20px -40px 30px -40px;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden; }
+
+.modal-tabs__tab {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  flex: 1;
+  background-color: var(--gray-ea);
+  color: var(--font);
+  text-align: center;
+  padding: 15px;
+  cursor: pointer; }
+
+.modal-tabs__tab.active {
+  font-weight: normal;
+  background-color: #fff;
+  color: var(--base);
+  cursor: default; }
+
+.modal__header {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5em;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 38px; }
+
+.modal__field {
+  margin-bottom: 20px; }
+
+.modal__col-label {
+  font-size: 16px; }
+
+.modal__col-label .custom-control {
+  font-size: 16px;
+  display: block; }
+
+.modal__link {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5em;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #0052B4;
+  padding: 0;
+  background: transparent;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.modal__col-btn {
+  text-align: right; }
+
+.modal__btn {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5em;
+  text-align: center;
+  text-transform: uppercase; }
+
 /*FOOTER */
 .footer-top {
   padding: 40px 0 24px;

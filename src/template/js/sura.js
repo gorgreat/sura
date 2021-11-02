@@ -6,6 +6,24 @@ const mp = new MobilePanel({
 });
 
 /**
+ * Модальные окна
+ */
+const modals = new Modals();
+
+$('.js-auth__login').on('click', function(){
+    modals.open('.modal_auth');
+})
+
+$('.js-auth__register').on('click', function () {
+    modals.open('.modal_reg');
+})
+
+$('.js-forgot-pwd').on('click', function () {
+    modals.open('.modal_forgot');
+})
+
+
+/**
  * Сворачивание секций фильтра в каталоге
  */
 $('.js-filter-as__toggle-section').on('click', function() {
