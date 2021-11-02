@@ -5181,7 +5181,9 @@ button:not(:disabled) {
   .cart-footer__col-2 {
     justify-content: end; }
   .cart-footer {
-    text-align: left; } }
+    text-align: left; }
+  .cart-item__total {
+    text-align: center; } }
 
 @media screen and (min-width: 992px) {
   .cart-item__properties {
