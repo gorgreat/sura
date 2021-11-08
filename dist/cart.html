@@ -218,7 +218,7 @@
                 <div class="cart-main__list">
 
                     <!-- cart-item -->
-                    <div class="cart-main__item cart-item">
+                    <div class="cart-main__item cart-item" data-id="245">
 
                         <div class="cart-item__header">
                             <div class="cart-item__figure">
@@ -315,7 +315,7 @@
 
 
                     <!-- cart-item -->
-                    <div class="cart-main__item cart-item">
+                    <div class="cart-main__item cart-item" data-id="240">
 
                         <div class="cart-item__header">
                             <div class="cart-item__figure">
@@ -355,15 +355,6 @@
                         </div>
 
                         <div class="cart-item__footer">
-
-                            <div class="cart-item__service">
-                                <button class="cart-item__delete js-cart-item-delete" data-id="245"
-                                    title="Удалить из корзины">
-                                    <svg class="sura-icon sura-icon-error" width="20" height="20">
-                                        <use xlink:href="#sura-icon-error"></use>
-                                    </svg>
-                                </button>
-                            </div>
 
                             <div class="cart-item__footer-row">
 
@@ -407,6 +398,15 @@
 
                         </div>
 
+                         <div class="cart-item__service">
+                             <button class="cart-item__delete js-cart-item-delete" data-id="240"
+                                 title="Удалить из корзины">
+                                 <svg class="sura-icon sura-icon-error" width="20" height="20">
+                                     <use xlink:href="#sura-icon-error"></use>
+                                 </svg>
+                             </button>
+                         </div>
+
                     </div>
                     <!-- /cart-item -->
 
@@ -414,7 +414,7 @@
 
 
                     <!-- cart-item -->
-                    <div class="cart-main__item cart-item">
+                    <div class="cart-main__item cart-item" data-id="200">
 
                         <div class="cart-item__header">
                             <div class="cart-item__figure">
@@ -454,14 +454,6 @@
 
                         <div class="cart-item__footer">
 
-                            <div class="cart-item__service">
-                                <button class="cart-item__delete js-cart-item-delete" data-id="245"
-                                    title="Удалить из корзины">
-                                    <svg class="sura-icon sura-icon-error" width="20" height="20">
-                                        <use xlink:href="#sura-icon-error"></use>
-                                    </svg>
-                                </button>
-                            </div>
 
                             <div class="cart-item__footer-row">
 
@@ -500,6 +492,15 @@
 
                                 </div>
                             </div>
+
+                             <div class="cart-item__service">
+                                 <button class="cart-item__delete js-cart-item-delete" data-id="200"
+                                     title="Удалить из корзины">
+                                     <svg class="sura-icon sura-icon-error" width="20" height="20">
+                                         <use xlink:href="#sura-icon-error"></use>
+                                     </svg>
+                                 </button>
+                             </div>
 
                         </div>
 
@@ -540,6 +541,17 @@
 
         </div>
         <!-- /cart-->
+
+        <!-- empty -->
+        <div class="cart-empty d-none">
+            <div class="cart-empty__text h2">Ваша корзина пуста</div>
+        </div>
+        <!-- empty -->
+
+
+        <script>
+            let cartStorage = 'basket';
+        </script>
 
     </div>
 </main>

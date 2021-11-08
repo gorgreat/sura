@@ -4420,6 +4420,10 @@ button:not(:disabled) {
 .favorite .sura-icon-heart-fill {
   color: var(--green); }
 
+.favorite svg {
+  font-size: 20px;
+  margin-right: 0; }
+
 .product__properties {
   flex: 0 0 auto;
   width: 100%;
@@ -4553,6 +4557,10 @@ button:not(:disabled) {
   line-height: 27px;
   text-transform: uppercase;
   min-width: 135px; }
+
+.product-to-cart__btn:hover,
+.product-to-cart__btn[data-in-art] {
+  background-color: var(--base); }
 
 /* Pages */
 .main__header {

@@ -218,7 +218,7 @@
                 <div class="cart-main__list">
 
                     <!-- cart-item -->
-                    <div class="cart-main__item cart-item">
+                    <div class="cart-main__item cart-item" data-id="245">
 
                         <div class="cart-item__header">
                             <div class="cart-item__figure">
@@ -303,7 +303,7 @@
 
                         <div class="cart-item__service">
                             <button class="cart-item__delete js-cart-item-delete" data-id="245"
-                                title="Удалить из корзины">
+                                title="Удалить из избранного">
                                 <svg class="sura-icon sura-icon-error" width="20" height="20">
                                     <use xlink:href="#sura-icon-error"></use>
                                 </svg>
@@ -315,7 +315,7 @@
 
 
                     <!-- cart-item -->
-                    <div class="cart-main__item cart-item">
+                    <div class="cart-main__item cart-item" data-id="240">
 
                         <div class="cart-item__header">
                             <div class="cart-item__figure">
@@ -356,23 +356,14 @@
 
                         <div class="cart-item__footer">
 
-                            <div class="cart-item__service">
-                                <button class="cart-item__delete js-cart-item-delete" data-id="245"
-                                    title="Удалить из корзины">
-                                    <svg class="sura-icon sura-icon-error" width="20" height="20">
-                                        <use xlink:href="#sura-icon-error"></use>
-                                    </svg>
-                                </button>
-                            </div>
-
                             <div class="cart-item__footer-row">
 
                                 <div class="cart-item__footer-col-1">
                                     <div class="cart-item__price price">
-                                        <div class="price__old">
+                                        <!-- <div class="price__old">
                                             <span class="price__value">2000</span> <span
                                                 class="price__currency">₽</span>
-                                        </div>
+                                        </div> -->
 
                                         <div class="price__current">
                                             <span class="price__value">1245</span> <span
@@ -387,7 +378,7 @@
                                         <button class="quantity__minus js-quantity__minus"
                                             type="button">–</button>
                                         <input type="number" name="ad" class="quantity__input"
-                                            min="1" max="50" value="1">
+                                            min="1" max="50" value="2">
                                         <button class="quantity__plus js-quantity__plus"
                                             type="button">+</button>
                                     </div>
@@ -407,6 +398,15 @@
 
                         </div>
 
+                        <div class="cart-item__service">
+                            <button class="cart-item__delete js-cart-item-delete" data-id="240"
+                                title="Удалить из избранного">
+                                <svg class="sura-icon sura-icon-error" width="20" height="20">
+                                    <use xlink:href="#sura-icon-error"></use>
+                                </svg>
+                            </button>
+                        </div>
+
                     </div>
                     <!-- /cart-item -->
 
@@ -414,7 +414,7 @@
 
 
                     <!-- cart-item -->
-                    <div class="cart-main__item cart-item">
+                    <div class="cart-main__item cart-item" data-id="200">
 
                         <div class="cart-item__header">
                             <div class="cart-item__figure">
@@ -453,15 +453,6 @@
                         </div>
 
                         <div class="cart-item__footer">
-
-                            <div class="cart-item__service">
-                                <button class="cart-item__delete js-cart-item-delete" data-id="245"
-                                    title="Удалить из корзины">
-                                    <svg class="sura-icon sura-icon-error" width="20" height="20">
-                                        <use xlink:href="#sura-icon-error"></use>
-                                    </svg>
-                                </button>
-                            </div>
 
                             <div class="cart-item__footer-row">
 
@@ -503,6 +494,15 @@
 
                         </div>
 
+                        <div class="cart-item__service">
+                            <button class="cart-item__delete js-cart-item-delete" data-id="200"
+                                title="Удалить из избранного">
+                                <svg class="sura-icon sura-icon-error" width="20" height="20">
+                                    <use xlink:href="#sura-icon-error"></use>
+                                </svg>
+                            </button>
+                        </div>
+
                     </div>
                     <!-- /cart-item -->
 
@@ -540,6 +540,16 @@
 
         </div>
         <!-- /cart-->
+
+        <!-- empty -->
+        <div class="cart-empty d-none">
+            <div class="cart-empty__text h2">Список избранных товаров пуст</div>
+        </div>
+        <!-- empty -->
+
+        <script>
+            let cartStorage = 'favorite';
+        </script>
 
     </div>
 </main>
