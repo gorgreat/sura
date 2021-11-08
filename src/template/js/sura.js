@@ -46,6 +46,11 @@ $('.product__img-thumb').on('click', function() {
     $(this).parent().addClass('active');
 })
 
+$('.nav-main__icon').on('click', function(){
+    const menuItem = $(this).parent();
+    menuItem.toggleClass('opened');
+})
+
 /** 
  *  Контрол + -
  */
