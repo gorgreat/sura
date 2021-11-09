@@ -51,6 +51,69 @@ $('.nav-main__icon').on('click', function(){
     menuItem.toggleClass('opened');
 })
 
+
+/**
+ * common form sender
+ */
+
+/* protect */
+$('.form__protect').val('19X84-lider');
+
+$('.js-form-submit').on('submit', function () {
+    const form = $(this);
+    const error = $(this).parent().find('.form__error');
+    const success = $(this).parent().find('.form__success');
+    const url = $(this).attr('action');
+    const submit = $('.form__submit', this);
+    const formType = form.find("input[name='form']");
+
+
+    error.hide();
+    success.hide();
+    submit.prop('disable', true);
+
+    $.ajax({
+        //url: url,  //FIXME: 
+        //url: "/form/error.json", //FIXME: del
+        url: "/form/success.json", //FIXME: del
+        type: "get", //FIXME: post
+        data: $(this).serialize(),
+        dataType: 'json',
+        success: function (response) {
+            if (response.status == 'success') {
+                error.hide();
+                submit.prop('disable', false);
+                form.slideUp(300, function () {
+                    success.slideDown();
+                });
+                // Авторизация и релоад страницы
+                if (formType && formType.val() === "auth") {
+                    setTimeout(function () {
+                        window.location.reload();
+                    }, 3000);
+                }
+                // setTimeout(function () {
+                   
+                //     form.slideDown();
+                //     success.hide();
+                // }, 10000);
+
+            } else {
+                error.show();
+                if (response.message) {
+                    error.find('div').html(response.message)
+                }
+            }
+
+        }
+    }).fail(function (response) {
+        error.show();
+        console.log(response);
+    });
+
+    return false;
+});
+
 /** 
  *  Контрол + -
  */
