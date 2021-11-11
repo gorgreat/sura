@@ -73,10 +73,8 @@ $('.js-form-submit').on('submit', function () {
     submit.prop('disable', true);
 
     $.ajax({
-        //url: url,  //FIXME: 
-        //url: "/form/error.json", //FIXME: del
-        url: "/form/success.json", //FIXME: del
-        type: "get", //FIXME: post
+        url: url,
+        type: form.attr('method') || 'post',
         data: $(this).serialize(),
         dataType: 'json',
         success: function (response) {
@@ -85,6 +83,7 @@ $('.js-form-submit').on('submit', function () {
                 submit.prop('disable', false);
                 form.slideUp(300, function () {
                     success.slideDown();
+                    success.get(0).scrollIntoView();
                 });
                 // Авторизация и релоад страницы
                 if (formType && formType.val() === "auth") {
@@ -92,17 +91,30 @@ $('.js-form-submit').on('submit', function () {
                         window.location.reload();
                     }, 3000);
                 }
-                // setTimeout(function () {
-                   
-                //     form.slideDown();
-                //     success.hide();
-                // }, 10000);
+
+                // Заказ
+                if (formType && formType.val() === "cart") {
+                    if (response.message) {
+                        success.html(response.message)
+                    }
+                }
+
+                
 
             } else {
                 error.show();
                 if (response.message) {
                     error.find('div').html(response.message)
                 }
+
+                // Заказ
+                if (formType && formType.val() === "cart") {
+                    if (response.message) {
+                        error.html(response.message)
+                    }
+                }
+
+                error.get(0).scrollIntoView({ block: "start", behavior: "smooth" });
             }
 
         }
@@ -113,6 +125,7 @@ $('.js-form-submit').on('submit', function () {
 
     return false;
 });
+
 
 /** 
  *  Контрол + -
@@ -502,7 +515,7 @@ const toCart = new ToCart();
  *     в) пересчет общей стоимости
  * 2) Удаление Товара из корзины / хранилища (Cookie)
  *     а), б), в) из п. 1
- * 3) Отправка заявки
+ * 3) Отправляет заказ
  * @param {String} storage - хранилище данных (basket | favorite)
  */
 class Cart {
@@ -546,6 +559,20 @@ class Cart {
 
            
         })
+
+        // Добавить грузополучателя
+        $('.order__receivers').on('click', '.js-reciver-add', () => this.addReciver())
+
+        // Удалить грузополучателя
+        $('.order__receivers').on('click', '.js-reciver-del', function () {
+            $(this).parents('.order-receiver').remove();
+        })
+        // Открыть форму
+        $('.js-order-toggle').on('click', function () {
+            $('.order').removeClass('d-none');
+            $('.order').get(0).scrollIntoView({ block: "start", behavior: "smooth" });
+        })
+
     }
     // Пересчет цен
     calculate() {
@@ -596,7 +623,27 @@ class Cart {
         $('.cart').slideUp();
         $('.cart-empty').removeClass('d-none');
     }
+
+    /**
+     * Добавляет грузополучателя
+     */
+    addReciver() {
+        const reciverBlock = $(`
+        <div class="order-receiver">
+            <div class="order-receiver__field">
+            </div>
+            <button class="order-receiver__btn js-reciver-del"  type="button">Удалить</button>
+        </div>
+        `);
+
+        const reciverSelect = $('.order__receivers .order-receiver').eq(0).find('select').clone();
+
+        reciverBlock.find('.order-receiver__field').append(reciverSelect);
+
+        $('.order__receivers').append(reciverBlock);
+    }
 }
+
 
 
 let cart;
