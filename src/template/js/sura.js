@@ -125,8 +125,44 @@ $('.js-form-submit').on('submit', function () {
 
     return false;
 });
+ /*вкладки в лк */
+;(function() {
+    'use strict';
+    var tabsmenu = document.querySelectorAll('.tabs-lk');
+    if (!tabsmenu) return;
+    [].forEach.call(tabsmenu, function(menu) {
+        menu.addEventListener('click', function(e) {
+            // if (e.target.tagName != 'LI') return;
+            var currIndex = switchTab(menu, e.target);
+            switchBlock(menu, currIndex);
+        })
+    });
 
+    function switchTab(menu, tab) {
+        var items = menu.querySelectorAll('.tab-nav-item-link'),
+            currIndex;
 
+        [].forEach.call(items, function(item, index) {
+            item.classList.remove('tab-nav-item-link-active');
+            if (item === tab) {
+                item.classList.add('tab-nav-item-link-active');
+                currIndex = index;
+            }
+        });
+        return currIndex;
+    }
+
+    function switchBlock(menu, currIndex) {
+        var content	= menu.nextElementSibling,
+            blocks = content.querySelectorAll('.tab-content-item');
+
+        [].forEach.call(blocks, function(block, index) {
+            block.classList.remove('tab-content-item-active');
+            if (index == currIndex) block.classList.add('tab-content-item-active');
+        });
+    }}
+)();
+ 
 /** 
  *  Контрол + -
  */

@@ -1,0 +1,175 @@
+<!--#set var="title" value="Личный кабинет" -->
+<!--#include virtual="/parts/header.html" -->
+<!--#include virtual="/parts/breadcrumbs.html" -->
+    
+    
+<main class="main">
+    <div class="container">
+        <div class="u-content">
+        </div>
+    </div>
+
+    <section class="section lk">
+        <div class="container">
+            <ul class="tabs-lk">
+                <li class="tab-nav-item"><a class="tab-nav-item-link  ">Заявки</a></li>
+                <li class="tab-nav-item"><a class="tab-nav-item-link tab-nav-item-link-active">Профиль</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-content-item">
+                    <div class="table-wrapper">
+                        <table class="table-orders">
+                        <thead>
+                            <tr>
+                                <th>Дата</th>
+                                <th>Время</th>
+                                <th>Грузополучатель</th>
+                                <th>Сумма</th>
+                                <th>Тип оплаты</th>
+                                <th>Комментарий</th>
+                                <th>Статус</th>
+                                <th colspan="2"></th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>15.05.2022</td>
+                                <td>12:00</td>
+                                <td>ООО«Рога&Копыта»</td>
+                                <td>10000 ₽</td>
+                                <td>Безнал</td>
+                                <td>Вход с торца здания</td>
+                                <td>Отгружено</td>
+                                <td><a class="table-orders-readmore" href="">Подробнее</a></td>
+                                <td><a class="table-orders-chancel" href=""><img src="template/img/cancel.svg" width="20" height="20" alt= Отменить"></a></td>
+                            </tr>
+                            <tr>
+                                <td>15.05.2022</td>
+                                <td>12:00</td>
+                                <td>ООО«Рога&Копыта»</td>
+                                <td>10000 ₽</td>
+                                <td>Безнал</td>
+                                <td>Вход с торца здания</td>
+                                <td>Отгружено</td>
+                                <td><a class="table-orders-readmore" href="">Подробнее</a></td>
+                                <td><a class="table-orders-chancel" href=""><img src="template/img/cancel.svg" width="20" height="20" alt= Отменить"></a></td>
+                            </tr>
+                            <tr>
+                                <td>15.05.2022</td>
+                                <td>12:00</td>
+                                <td>ООО«Рога&Копыта»</td>
+                                <td>10000 ₽</td>
+                                <td>Безнал</td>
+                                <td>Вход с торца здания</td>
+                                <td>Отгружено</td>
+                                <td><a class="table-orders-readmore" href="">Подробнее</a></td>
+                                <td><a class="table-orders-chancel" href=""><img src="template/img/cancel.svg" width="20" height="20" alt= Отменить"></a></td>
+                            </tr>
+
+                        </tbody>
+
+                        </table>              
+                    </div>                      
+                </div>
+              
+                <div class="tab-content-item tab-content-item-active">
+                    <form action="" class="profile">
+                        <legend class="profile-legend">
+                            <div class="profile-legend-title">Персональные данные</div>                            
+                            <div class="profile-row">
+                                <label for="name" class="profile-label">Имя</label>
+                                 <input type="text" class="profile-input" name="name" id="name" placeholder="Иван">
+                            </div>
+                            <div class="profile-row">
+                                <label for="сompany" class="profile-label">Компания</label>
+                                 <input type="text" class="profile-input" name="сompany" id="сompany" placeholder="Компания">
+                            </div>
+                            <div class="profile-row">
+                                <label for="post" class="profile-label">Должность</label>
+                                 <input type="text" class="profile-input" name="post" id="post" placeholder="Должность">
+                            </div>
+                            <div class="profile-row right">
+                                <a href="">Сменить пароль</a>
+                            </div>
+                        </legend>
+                        <legend class="profile-legend">
+                            <div class="profile-legend-title">Контактная информация</div>                            
+                            <div class="profile-row">
+                                <label for="email" class="profile-label">Эл. почта</label>
+                                 <input type="email" class="profile-input" name="email" id="email" placeholder="name@batareika.ru">
+                            </div>
+                            <div class="profile-row">
+                                <label for="tel" class="profile-label">Телефон</label>
+                                 <input type="tel" class="profile-input profile-input-shot" name="tel" id="tel" placeholder="+123 456 78 90">
+                                 <button class="profile-btn">Добавить</button>                                                                  
+                            </div>
+                            <div class="profile-row">
+                                <label for="adress" class="profile-label">Адрес доставки</label>
+                                 <input type="text" class="profile-input profile-input-shot" name="adress" id="adress" placeholder="Москва, Красная площадь">
+                                 <button class="profile-btn">Добавить</button>                                 
+                            </div>
+                        </legend>          
+                        <legend class="profile-legend">
+                            <div class="profile-legend-title">Реквизиты компании</div>                            
+                            <div class="profile-row">
+                                <label for="company-name" class="profile-label">Название*</label>
+                                 <input type="text" class="profile-input" name="company-name" id="company-name" placeholder="ООО «ИА ИО Батарейка»" required>
+                            </div>
+                            <div class="profile-row">
+                                <label for="inn" class="profile-label">ИНН*</label>
+                                 <input type="number" class="profile-input" name="inn" id="inn" placeholder="021654879851" required>
+                            </div>
+                            <div class="profile-row">
+                                <label for="kpp" class="profile-label">КПП*</label>
+                                 <input type="number" class="profile-input" name="kpp" id="kpp" placeholder="02156687513654643" required>
+                            </div>
+                            <div class="profile-row">
+                                <label for="legal-address" class="profile-label">Юридический адрес</label>
+                                 <input type="text" class="profile-input" name="legal-address" id="legal-address" placeholder="Москва, Красная площадь">
+                            </div>
+                            <div class="profile-row">
+                                <label for="phone-fax" class="profile-label">Телефон/Факс*</label>
+                                 <input type="text" class="profile-input" name="phone-fax" id="phone-fax" placeholder="+123 456 78 90" required>
+                            </div>
+                            <div class="profile-row">
+                                <label for="payment-account" class="profile-label">Расчетный счет*</label>
+                                 <input type="number" class="profile-input" name="payment-account" id="payment-account" placeholder="165321468132168546321" required>
+                            </div>
+                            <div class="profile-row">
+                                <label for="bank" class="profile-label">Название банка*</label>
+                                 <input type="text" class="profile-input" name="bank" id="bank" placeholder="ГлавноБанк" required>
+                            </div>
+                            <div class="profile-row">
+                                <label for="bik" class="profile-label">БИК*</label>
+                                 <input type="number" class="profile-input" name="bik" id="bik" placeholder="52643168546321635" required>
+                            </div>
+                            <div class="profile-row">
+                                <label for="bank-account" class="profile-label">Кор.счет банка*</label>
+                                 <input type="number" class="profile-input" name="bank-account" id="bank-account" placeholder="54613465416351341365432163" required>
+                            </div>
+                            <div class="profile-row">
+                                <label for="delivery-address" class="profile-label">Адрес доставки док-ов*</label>
+                                 <input type="text" class="profile-input" name="delivery-address" id="delivery-address" placeholder="Москва, Красная площадь" required>
+                            </div>      
+                            <div class="profile-row">  
+                                <input type="checkbox" class="checkbox-nds" name="nds" id="nds">
+                                <label class="checkbox-label" for="nds">Плательщик НДС</label>
+                            </div> 
+                            <div class="profile-row right">
+                                <a class="profile-chancel" href="">Отменить</a>
+                                <button type="submit" class="profile-submit">Сохранить изменения</button>
+                            </div>                               
+                        </legend>                                                           
+                    </form>
+                </div>
+     
+              </div>
+        </div>
+    </section>
+
+
+</main>
+
+
+<!--#include virtual="/parts/footer.html" -->
