@@ -1,7 +1,6 @@
 .table-orders {
     width: 100%;
     text-align: center;
-    border: 1px solid #DAE6C6;
     background-color:white;
 }
 .table-orders th {
@@ -12,6 +11,8 @@
     padding: 18px 10px;
     color: #666666;
     background-color: #F5F9E9;
+}
+.table-orders th:not(:last-child) {
     border-right: 1px solid #DAE6C6;
 }
 .table-orders tr td {
@@ -26,7 +27,7 @@
     background-color: #F5F9E9;
 }
 
-.table-orders tr td {
+.table-orders tr td:not(:last-child) {
     border-right: 1px solid #DAE6C6;
 }
 .table-orders-readmore {
@@ -36,9 +37,40 @@
 .table-orders-readmore:hover{
     text-decoration: none;
 }
+.table-wrapper {
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #9BC525;
+}
 @media only screen and (max-width:668px)  {
     .table-wrapper {
         overflow: auto;
     }
 }
-
+.table-simple-order {
+    width: 100%;
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+}
+.table-simple-order tr td {
+    padding: 15px 20px;
+}
+.table-simple-order tr th {
+    padding: 15px 20px;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.05em;   
+    color: #333333;    
+    background-color: #F5F9E9;
+}
+.table-simple-order span {
+    font-weight: 500;
+}
+.btn-order-cancel {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.marb-2 {
+    margin-bottom: 2em;
+}
